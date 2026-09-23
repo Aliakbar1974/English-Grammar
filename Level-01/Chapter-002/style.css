@@ -1,0 +1,1213 @@
+/* =========================================================
+   ENGLISH VOCABULARY QUIZ
+   Modern Quiz Theme
+   Version - Updated Option Alignment
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(0, 106, 78, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(244, 42, 65, 0.12),
+            transparent 35%
+        ),
+        #071c22;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#quiz-screen,
+#result-screen {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   START SCREEN
+   ========================================================= */
+
+#start-screen {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+
+.top-badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: #006a4e;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+
+#start-screen h1 {
+    font-size: clamp(34px, 6vw, 58px);
+
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+
+    font-weight: 900;
+}
+
+
+#start-screen h2 {
+    font-size: clamp(18px, 3vw, 27px);
+
+    color: #f4d35e;
+
+    margin-bottom: 20px;
+}
+
+
+.info-box {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    padding: 18px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 16px;
+
+    line-height: 1.7;
+}
+
+
+.instruction {
+    margin-bottom: 25px;
+
+    color: #d8e5e2;
+}
+
+
+/* =========================================================
+   MODE BUTTONS
+   ========================================================= */
+
+.mode-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.mode-buttons button {
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 15px 25px;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+/* Learning Mode */
+
+.learning-mode-btn,
+.mode-btn.learning {
+    background: #006a4e;
+
+    color: #ffffff;
+}
+
+
+/* Exam Mode */
+
+.exam-mode-btn,
+.mode-btn.exam {
+    background: #e63946;
+
+    color: #ffffff;
+}
+
+
+.mode-buttons button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================================
+   QUIZ SCREEN
+   ========================================================= */
+
+#quiz-screen {
+    display: none;
+}
+
+
+.quiz-container {
+    width: 100%;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   QUIZ TOP
+   ========================================================= */
+
+.quiz-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.question-counter {
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #d7e5e2;
+}
+
+
+.timer-box {
+    min-width: 50px;
+
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #e63946;
+
+    border-radius: 10px;
+
+    font-weight: 900;
+
+    font-size: 18px;
+
+    color: #ffffff;
+}
+
+
+/* Timer danger */
+
+.timer-danger {
+    background: #c1121f !important;
+
+    animation: timerPulse 0.8s infinite;
+}
+
+
+@keyframes timerPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+   ========================================================= */
+
+.progress {
+    width: 100%;
+
+    height: 8px;
+
+    background: rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+
+#progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    background: #f4d35e;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   QUESTION
+   ========================================================= */
+
+#question {
+    font-size: clamp(22px, 3.5vw, 30px);
+
+    line-height: 1.5;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+    color: #ffffff;
+}
+
+
+/* Vocabulary word */
+
+.vocabulary-word {
+    display: inline-block;
+
+    font-size: 1.05em;
+
+    font-weight: 900;
+
+    color: #ffffff;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   ANSWER OPTIONS CONTAINER
+   ========================================================= */
+
+#options {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   ANSWER BUTTON
+   IMPORTANT:
+   JS uses .option-btn
+   ========================================================= */
+
+.option-btn {
+    width: 100%;
+
+    min-height: 66px;
+
+    padding: 10px 18px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 14px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.92);
+
+    color: #111111;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    /*
+       Font increased from 17px to 21px
+    */
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    /*
+       Prevent browser from making disabled text faint
+    */
+
+    opacity: 1;
+
+    -webkit-text-fill-color: #111111;
+}
+
+
+/* =========================================================
+   OPTION LETTER A / B / C / D
+   ========================================================= */
+
+.option-letter {
+    flex: 0 0 42px;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    align-self: center;
+
+    border-radius: 50%;
+
+    background: #edf0f2;
+
+    color: #111111;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   OPTION TEXT
+   ========================================================= */
+
+.option-text {
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    align-self: center;
+
+    min-height: 42px;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #111111;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    text-align: left;
+
+    /*
+       Prevent text from dropping underneath A
+    */
+
+    white-space: normal;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   OPTION HOVER
+   ========================================================= */
+
+.option-btn:hover:not(:disabled) {
+
+    background: #ffffff;
+
+    border-color: #006a4e;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,0.20);
+
+}
+
+
+/* =========================================================
+   DISABLED OPTIONS
+   IMPORTANT:
+   Text must NOT become blurry
+   ========================================================= */
+
+.option-btn:disabled {
+
+    cursor: default;
+
+    opacity: 1 !important;
+
+    color: #111111 !important;
+
+    -webkit-text-fill-color: #111111 !important;
+}
+
+
+.option-btn:disabled .option-text {
+
+    color: #111111 !important;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #111111 !important;
+}
+
+
+.option-btn:disabled .option-letter {
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   CORRECT ANSWER
+   ========================================================= */
+
+.option-btn.correct {
+
+    background: #087f5b !important;
+
+    border-color: #55d6a7 !important;
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    box-shadow:
+        0 6px 18px rgba(8,127,91,0.30);
+}
+
+
+.option-btn.correct .option-letter {
+
+    background: #ffffff;
+
+    color: #087f5b;
+
+    opacity: 1;
+
+    -webkit-text-fill-color: #087f5b;
+}
+
+
+.option-btn.correct .option-text {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   WRONG ANSWER
+   ========================================================= */
+
+.option-btn.wrong {
+
+    background: #a61e2b !important;
+
+    border-color: #ff7b86 !important;
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    box-shadow:
+        0 6px 18px rgba(166,30,43,0.30);
+}
+
+
+.option-btn.wrong .option-letter {
+
+    background: #ffffff;
+
+    color: #a61e2b;
+
+    opacity: 1;
+
+    -webkit-text-fill-color: #a61e2b;
+}
+
+
+.option-btn.wrong .option-text {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FEEDBACK
+   ========================================================= */
+
+#feedback {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    line-height: 1.7;
+}
+
+
+#correct-message {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+
+    color: #55d6a7;
+}
+
+
+#wrong-message {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #ff7b86;
+}
+
+
+#example-text {
+
+    margin-top: 12px;
+
+    color: #f4d35e;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   NEXT QUESTION BUTTON
+   IMPORTANT:
+   JS uses .next-btn
+   ========================================================= */
+
+.next-btn {
+
+    width: 100%;
+
+    min-height: 58px;
+
+    margin-top: 22px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    /*
+       Green button
+    */
+
+    background: #087f5b;
+
+    color: #ffffff;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    line-height: 1.3;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 6px 18px rgba(8,127,91,0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.next-btn:hover {
+
+    background: #0a966b;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 24px rgba(8,127,91,0.35);
+}
+
+
+.next-btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* Backward compatibility */
+
+.next-question-btn {
+
+    width: 100%;
+
+    min-height: 58px;
+
+    margin-top: 22px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #087f5b;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESULT SCREEN
+   ========================================================= */
+
+#result-screen {
+
+    display: none;
+
+    text-align: center;
+}
+
+
+.result-card {
+
+    width: 100%;
+
+    padding: 35px 25px;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.30);
+}
+
+
+.result-card h1 {
+
+    margin-bottom: 20px;
+
+    font-size: clamp(28px, 5vw, 42px);
+
+    font-weight: 900;
+}
+
+
+#score {
+
+    font-size: clamp(45px, 8vw, 72px);
+
+    font-weight: 900;
+
+    color: #f4d35e;
+}
+
+
+#percentage {
+
+    margin-top: 5px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+
+#result-message {
+
+    margin: 20px 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SOCIAL MESSAGE
+   ========================================================= */
+
+.social-message {
+
+    display: block;
+
+    margin: 25px 0;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(0,106,78,0.18);
+
+    border: 1px solid rgba(0,106,78,0.35);
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESULT BUTTONS
+   ========================================================= */
+
+#result-screen button {
+
+    width: 100%;
+
+    min-height: 55px;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    margin-top: 12px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#result-screen button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+/* Facebook button */
+
+.facebook-btn,
+#result-screen button[onclick*="returnToFacebook"] {
+
+    background: #1877f2;
+
+    color: #ffffff;
+}
+
+
+/* Play Again */
+
+.play-again-btn,
+#result-screen button[onclick*="reloadQuiz"] {
+
+    background: #087f5b;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status {
+
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    color: #d8e5e2;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 15px;
+
+        align-items: flex-start;
+    }
+
+
+    main {
+
+        margin-top: 15px;
+
+        margin-bottom: 15px;
+    }
+
+
+    #start-screen {
+
+        padding: 25px 12px;
+    }
+
+
+    .quiz-container {
+
+        padding: 20px 16px;
+
+        border-radius: 20px;
+    }
+
+
+    #options {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .option-btn {
+
+        min-height: 62px;
+
+        padding: 9px 14px;
+
+        gap: 12px;
+
+        font-size: 19px;
+    }
+
+
+    .option-letter {
+
+        flex: 0 0 40px;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+
+    .option-text {
+
+        font-size: 19px;
+
+        line-height: 1.4;
+
+        min-height: 40px;
+    }
+
+
+    #question {
+
+        font-size: 23px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .next-btn {
+
+        min-height: 58px;
+
+        font-size: 19px;
+
+        padding: 14px 18px;
+    }
+
+
+    #feedback {
+
+        padding: 16px;
+    }
+
+
+    #example-text {
+
+        font-size: 16px;
+    }
+
+
+    .result-card {
+
+        padding: 28px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+
+    .quiz-container {
+
+        padding: 17px 12px;
+    }
+
+
+    .quiz-top {
+
+        gap: 8px;
+    }
+
+
+    .question-counter {
+
+        font-size: 14px;
+    }
+
+
+    .timer-box {
+
+        min-width: 46px;
+
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+
+    .option-btn {
+
+        min-height: 58px;
+
+        padding: 8px 11px;
+
+        gap: 10px;
+
+        font-size: 18px;
+    }
+
+
+    .option-letter {
+
+        flex: 0 0 36px;
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 16px;
+    }
+
+
+    .option-text {
+
+        font-size: 18px;
+
+        min-height: 36px;
+    }
+
+
+    .next-btn {
+
+        min-height: 55px;
+
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   END OF CSS
+   ========================================================= */
