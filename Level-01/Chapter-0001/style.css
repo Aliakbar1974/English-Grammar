@@ -1211,3 +1211,14 @@ main {
 /* =========================================================
    END OF CSS
    ========================================================= */
+
+/* =========================================================
+   CHAPTER NAVIGATION
+   ========================================================= */
+.top-navigation{margin-top:24px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.top-navigation a,.nav-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;padding:12px 16px;font-weight:800;font-size:15px;transition:transform .2s ease,box-shadow .2s ease}
+.top-navigation a{color:#d8e5e2;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
+.top-navigation a:hover,.nav-btn:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(0,0,0,.22)}
+.result-navigation{display:grid;gap:10px;margin-top:16px}
+.nav-btn{width:100%;min-height:50px}
+.level-btn{background:#006a4e;color:#fff}.levels-btn{background:#334155;color:#fff}.home-btn{background:#7c3aed;color:#fff}
