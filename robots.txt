@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aliakbar1974.github.io/English-Grammar/sitemap.xml
