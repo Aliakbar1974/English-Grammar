@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        English Grammar MCQ Challenge 0003
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         START SCREEN
+         ===================================================== -->
+
+    <main id="start-screen">
+
+        <div class="top-badge">
+            MCQ
+        </div>
+
+
+        <h1>
+            English Grammar
+        </h1>
+
+
+        <h2>
+            MCQ Challenge <span>0003</span>
+        </h2>
+
+
+        <div class="info-box">
+
+            <div>
+                <strong>
+                    20 Questions
+                </strong>
+            </div>
+
+            <div>
+                <strong>
+                    Learning / Exam Mode
+                </strong>
+            </div>
+
+            <div>
+                <strong>
+                    15 Seconds per Question
+                </strong>
+            </div>
+
+        </div>
+
+
+        <p class="instruction">
+            Select a mode to start the quiz
+        </p>
+
+
+        <div class="mode-buttons">
+
+            <button
+                id="learningBtn"
+                class="learning-mode-btn"
+                type="button"
+                onclick="startQuiz('learning')"
+            >
+                📖 LEARNING MODE
+            </button>
+
+
+            <button
+                id="examBtn"
+                class="exam-mode-btn"
+                type="button"
+                onclick="startQuiz('exam')"
+            >
+                ⏱ EXAM MODE
+            </button>
+
+        </div>
+
+
+        <p
+            id="status"
+            class="status"
+        ></p>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         QUIZ SCREEN
+         ===================================================== -->
+
+    <section id="quiz-screen">
+
+        <div class="quiz-container">
+
+
+            <!-- QUIZ TOP -->
+
+            <div class="quiz-top">
+
+                <div class="question-counter">
+
+                    Question:
+                    <span id="question-number">
+                        1
+                    </span>
+
+                    /
+
+                    <span id="total-questions">
+                        20
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="timer-box"
+                    id="timer"
+                >
+                    15
+                </div>
+
+            </div>
+
+
+
+            <!-- PROGRESS BAR -->
+
+            <div class="progress">
+
+                <div
+                    id="progress-bar"
+                ></div>
+
+            </div>
+
+
+
+            <!-- QUESTION -->
+
+            <div id="question"></div>
+
+
+
+            <!-- OPTIONS -->
+
+            <div id="options"></div>
+
+
+
+            <!-- FEEDBACK -->
+
+            <div id="feedback">
+
+                <div
+                    id="correct-message"
+                ></div>
+
+
+                <div
+                    id="wrong-message"
+                ></div>
+
+
+                <div
+                    id="example-text"
+                ></div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESULT SCREEN
+         ===================================================== -->
+
+    <section id="result-screen">
+
+
+        <div class="result-card">
+
+
+            <h1>
+                🎉 Quiz Completed!
+            </h1>
+
+
+            <!-- SCORE -->
+
+            <div id="score">
+                0 / 20
+            </div>
+
+
+            <!-- PERCENTAGE -->
+
+            <div id="percentage">
+                0%
+            </div>
+
+
+            <!-- RESULT MESSAGE -->
+
+            <div id="result-message"></div>
+
+
+
+            <!-- =================================================
+                 SOCIAL MESSAGE
+                 ================================================= -->
+
+            <div
+                id="social-message"
+                class="social-message"
+            >
+
+                ❤️
+                <strong>
+                    Did you enjoy the quiz?
+                </strong>
+
+                <br><br>
+
+                👍 Like our Facebook Post
+
+                <br>
+
+                💬 Comment your score
+
+                <br>
+
+                🔄 Share the quiz with your friends
+
+                <br>
+
+                ❤️ Follow our page for more quizzes!
+
+            </div>
+
+
+
+            <!-- RETURN TO FACEBOOK -->
+
+            <button
+                id="facebook-btn"
+                class="facebook-btn"
+                type="button"
+                onclick="returnToFacebook()"
+            >
+                🔵 RETURN TO FACEBOOK
+            </button>
+
+
+
+            <!-- PLAY AGAIN -->
+
+            <button
+                id="play-again-btn"
+                class="play-again-btn"
+                type="button"
+                onclick="reloadQuiz()"
+            >
+                🔄 PLAY AGAIN
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
