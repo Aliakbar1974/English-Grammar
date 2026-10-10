@@ -16,6 +16,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+          # Add a repository secret named QUIZ_AUTOMATION_TOKEN (PAT with Contents: Read and write)
+          # to ensure the automated commit also triggers GitHub Pages deployment.
+          token: ${{ secrets.QUIZ_AUTOMATION_TOKEN || secrets.GITHUB_TOKEN }}
       - name: Add Go Home button to quiz pages missing one
         run: |
           cat > /tmp/ensure_go_home.py <<'PY'
