@@ -12,4 +12,36 @@
 <main class="wrap"><section class="grid">
 <article class="card"><h2>Level-01</h2><p>Available now</p><a class="btn" href="Level-01/">View Level</a></article><article class="card"><h2>Level-02</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-03</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-04</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-05</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-06</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-07</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-08</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-09</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-10</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-11</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-12</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-13</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-14</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-15</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-16</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-17</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-18</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-19</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article><article class="card"><h2>Level-20</h2><p>Coming soon</p><span class="btn disabled">Coming Soon</span></article>
 </section><div class="back"><a href="https://aliakbar1974.github.io/Quiz-Challenge-Bangladesh-Website/">← Back to Quiz Challenge Bangladesh</a></div></main>
-<footer>© 2026 Quiz Challenge Bangladesh</footer></body></html>
+<footer>© 2026 Quiz Challenge Bangladesh</footer><script>
+/* Mark a level available only when it contains at least one published chapter. */
+(async function syncGrammarLevels() {
+  const api = "https://api.github.com/repos/Aliakbar1974/English-Grammar/git/trees/main?recursive=1";
+  try {
+    const response = await fetch(api, { headers: { "Accept": "application/vnd.github+json" } });
+    if (!response.ok) throw new Error("GitHub API unavailable");
+    const data = await response.json();
+    const levels = new Set();
+    for (const item of (data.tree || [])) {
+      if (item.type !== "blob") continue;
+      const match = item.path.match(/^(Level-\d+)\/Chapter-\d+\/index\.html$/i);
+      if (match) levels.add(match[1].toLowerCase());
+    }
+    document.querySelectorAll(".card").forEach(card => {
+      const title = card.querySelector("h2");
+      if (!title) return;
+      const level = title.textContent.trim().toLowerCase();
+      const link = card.querySelector("a.btn");
+      const available = levels.has(level);
+      const status = card.querySelector("p");
+      if (available) {
+        if (status) status.textContent = "Available chapters";
+        if (link) { link.classList.remove("disabled"); link.textContent = "View Level"; link.href = title.textContent.trim() + "/"; }
+      } else {
+        if (status) status.textContent = "Coming soon";
+        if (link) { link.classList.add("disabled"); link.removeAttribute("href"); link.textContent = "Coming Soon"; }
+      }
+    });
+  } catch (error) { console.warn("Grammar level cards kept their saved fallback.", error); }
+})();
+</script>
+</body></html>
