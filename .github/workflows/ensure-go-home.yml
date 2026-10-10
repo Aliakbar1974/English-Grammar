@@ -1,0 +1,70 @@
+name: Ensure Go Home button on quiz pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-go-home:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Add Go Home button to quiz pages missing one
+        run: |
+          cat > /tmp/ensure_go_home.py <<'PY'
+          import pathlib, re, subprocess
+          
+          root = pathlib.Path(".")
+          changed = []
+          for file in root.rglob("index.html"):
+              rel = file.as_posix().removeprefix("./")
+              if ".git/" in rel or "node_modules/" in rel:
+                  continue
+              if not (re.fullmatch(r'Level-\d+/Chapter-\d{4}/index\.html', rel, re.I)):
+                  continue
+              html = file.read_text(encoding="utf-8")
+              if re.search(r'(?:GO\s*HOME|HOME\s*PAGE|href\s*=\s*["\'][^"\']*quizchallengebd\.com/?["\'])', html, re.I):
+                  continue
+              button = """
+          <!-- AUTO-GO-HOME: managed by .github/workflows/ensure-go-home.yml -->
+          <style>
+          #auto-go-home-button {
+            position: fixed; right: 14px; bottom: 14px; z-index: 99999;
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 10px 15px; border: 2px solid #ffffff; border-radius: 999px;
+            background: #123f70; color: #ffffff; font: 700 14px/1.2 Arial, sans-serif;
+            text-decoration: none; box-shadow: 0 3px 12px rgba(0,0,0,.28);
+          }
+          #auto-go-home-button:hover { background: #0b2c50; }
+          @media (max-width: 480px) {
+            #auto-go-home-button { right: 9px; bottom: 9px; padding: 9px 12px; font-size: 12px; }
+          }
+          </style>
+          <a id="auto-go-home-button" href="https://quizchallengebd.com/" aria-label="Go to Quiz Challenge Bangladesh home page">🏠 GO HOME</a>
+          """
+              if re.search(r"</body\s*>", html, re.I):
+                  html = re.sub(r"</body\s*>", lambda m: button + "\n" + m.group(0), html, count=1, flags=re.I)
+              else:
+                  html += "\n" + button + "\n"
+              file.write_text(html, encoding="utf-8")
+              changed.append(rel)
+          
+          if changed:
+              subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
+              subprocess.run(["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"], check=True)
+              subprocess.run(["git", "add", *changed], check=True)
+              subprocess.run(["git", "commit", "-m", "Automatically add Go Home button to quiz pages"], check=True)
+              subprocess.run(["git", "push"], check=True)
+              print("Added Go Home button to:", ", ".join(changed))
+          else:
+              print("No quiz pages needed a Go Home button.")
+          
+          PY
+          python /tmp/ensure_go_home.py
