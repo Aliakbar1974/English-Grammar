@@ -1,6 +1,6 @@
 // ============================================================
 // ENGLISH GRAMMAR QUIZ 0013
-// 20 Questions
+// 18 Questions
 // Learning Mode + Exam Mode
 // 15 Seconds per Question
 // English-Only Interface
@@ -152,14 +152,6 @@ const quizData = [
     example: "Example: He tried to control his anger."
   },
   {
-    id: "GR053",
-    question: "Which is the abstract noun of “wise”?",
-    options: ["Wisdom", "Wisely", "Wise", "Wiser"],
-    answer: 0,
-    explanation: "'Wisdom' is the abstract noun of 'wise'.",
-    example: "Example: Wisdom helps us make good choices."
-  },
-  {
     id: "GR054",
     question: "Which is an abstract noun?",
     options: ["Friend", "Friendly", "Friendship", "Befriend"],
@@ -206,14 +198,6 @@ const quizData = [
     answer: 3,
     explanation: "'Success' is an abstract noun because it names the achievement of a goal.",
     example: "Example: Hard work can lead to success."
-  },
-  {
-    id: "GR060",
-    question: "Which is an abstract noun?",
-    options: ["Wise", "Wisdom", "Wisely", "Wiser"],
-    answer: 1,
-    explanation: "'Wisdom' is an abstract noun that refers to the quality of being wise.",
-    example: "Example: Wisdom is more valuable than wealth."
   }
 ];
 
