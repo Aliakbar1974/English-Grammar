@@ -58,7 +58,7 @@ const quizData = [
   {
     id: "GR241",
     question: "Which is an abstract noun?",
-    options: ["Brave", "Bravely", "Bravery", "Braveful"],
+    options: ["Brave", "Bravely", "Bravery", "Braver"],
     answer: 2,
     explanation: "'Bravery' is an abstract noun because it names the quality of being brave.",
     example: "Example: The soldier showed great bravery."
