@@ -103,7 +103,7 @@ const quizData = [
     },
     {
         id: "GR067",
-        question: "Which is a demonstrative adjective?",
+        question: "Which word is a demonstrative adjective in the sentence \"This book is new\"?",
         options: ["Quickly", "Honesty", "Run", "This"],
         answer: 3,
         explanation: "'This', 'That', 'These', 'Those'—এগুলো যখন কোনো Noun-এর পূর্বে বসে তাকে নির্দিষ্ট করে নির্দেশ করে, তখন তা Demonstrative Adjective।",
