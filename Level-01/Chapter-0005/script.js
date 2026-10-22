@@ -111,7 +111,7 @@ const quizData = [
 
   {
     id: "GR085",
-    question: "Which is an auxiliary verb?",
+    question: "Which word is an auxiliary verb in the sentence \"They have finished their work\"?",
     options: [
       "Run",
       "Beautiful",
