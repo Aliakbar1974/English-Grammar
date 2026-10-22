@@ -55,8 +55,8 @@ const quizData = [
     {
         id: "GR021",
         question: "Which of the following is a proper noun?",
-        options: ["City", "Country", "River", "Dhaka"],
-        answer: 3,
+        options: ["Dhaka", "River", "City", "Country"],
+        answer: 0,
         explanation: "Dhaka is a proper noun because it is the specific name of a particular city.",
         example: "Dhaka is the capital of Bangladesh."
     },
@@ -199,8 +199,8 @@ const quizData = [
     {
         id: "GR037",
         question: "Which noun is a name given to a particular person, place, or thing?",
-        options: ["Common noun", "Abstract noun", "Material noun", "Proper noun"],
-        answer: 3,
+        options: ["Abstract noun", "Proper noun", "Common noun", "Material noun"],
+        answer: 1,
         explanation: "A proper noun is the specific name of a particular person, place, organization, or thing.",
         example: "Rahim is a proper noun."
     },
