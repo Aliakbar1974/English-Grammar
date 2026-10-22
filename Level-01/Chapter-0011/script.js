@@ -55,7 +55,7 @@ function playSound(soundName) {
 
 const quizData = [
   {
-    id: "GR001",
+    id: "GR201",
     question: "Which of the following is a noun?",
     options: ["Honest", "Honestly", "Honesty", "Honourable"],
     answer: 2,
@@ -63,7 +63,7 @@ const quizData = [
     example: "Example: Honesty is the best policy."
   },
   {
-    id: "GR002",
+    id: "GR202",
     question: "Which is a proper noun?",
     options: ["Dhaka", "City", "Country", "River"],
     answer: 0,
@@ -71,7 +71,7 @@ const quizData = [
     example: "Example: Dhaka is the capital of Bangladesh."
   },
   {
-    id: "GR003",
+    id: "GR203",
     question: "Which is a common noun?",
     options: ["Bangladesh", "Asia", "Padma", "Teacher"],
     answer: 3,
@@ -79,7 +79,7 @@ const quizData = [
     example: "Example: The teacher is explaining the lesson."
   },
   {
-    id: "GR004",
+    id: "GR204",
     question: "Which is an abstract noun?",
     options: ["Chair", "Honesty", "Table", "Book"],
     answer: 1,
@@ -87,7 +87,7 @@ const quizData = [
     example: "Example: Her honesty inspired everyone."
   },
   {
-    id: "GR005",
+    id: "GR205",
     question: "Which is a material noun?",
     options: ["Gold", "Army", "Kindness", "Student"],
     answer: 0,
@@ -95,7 +95,7 @@ const quizData = [
     example: "Example: This ring is made of gold."
   },
   {
-    id: "GR006",
+    id: "GR206",
     question: "Which is a collective noun?",
     options: ["Boy", "Water", "Team", "Wisdom"],
     answer: 2,
@@ -103,7 +103,7 @@ const quizData = [
     example: "Example: Our cricket team won the match."
   },
   {
-    id: "GR007",
+    id: "GR207",
     question: "“Bangladesh” is a ______ noun.",
     options: ["Common", "Proper", "Collective", "Abstract"],
     answer: 1,
@@ -111,7 +111,7 @@ const quizData = [
     example: "Example: Bangladesh is our motherland."
   },
   {
-    id: "GR008",
+    id: "GR208",
     question: "“Freedom” is a/an ______ noun.",
     options: ["Proper", "Material", "Collective", "Abstract"],
     answer: 3,
@@ -119,7 +119,7 @@ const quizData = [
     example: "Example: Millions sacrificed their lives for freedom."
   },
   {
-    id: "GR009",
+    id: "GR209",
     question: "“Silver” is generally a ______ noun.",
     options: ["Abstract", "Collective", "Material", "Proper"],
     answer: 2,
@@ -127,7 +127,7 @@ const quizData = [
     example: "Example: Silver is a valuable metal."
   },
   {
-    id: "GR010",
+    id: "GR210",
     question: "“Crowd” is a ______ noun.",
     options: ["Collective", "Proper", "Material", "Abstract"],
     answer: 0,
@@ -135,7 +135,7 @@ const quizData = [
     example: "Example: A large crowd gathered in front of the stage."
   },
   {
-    id: "GR011",
+    id: "GR211",
     question: "Which noun names a particular person or place?",
     options: ["Common noun", "Abstract noun", "Material noun", "Proper noun"],
     answer: 3,
@@ -143,7 +143,7 @@ const quizData = [
     example: "Example: 'John' and 'Paris' are proper nouns."
   },
   {
-    id: "GR012",
+    id: "GR212",
     question: "Which noun names a general person, place, animal, or thing?",
     options: ["Proper noun", "Common noun", "Abstract noun", "Collective noun"],
     answer: 1,
@@ -151,7 +151,7 @@ const quizData = [
     example: "Example: 'Boy', 'City', and 'Dog' are common nouns."
   },
   {
-    id: "GR013",
+    id: "GR213",
     question: "Which noun refers to an idea or quality?",
     options: ["Abstract noun", "Material noun", "Proper noun", "Collective noun"],
     answer: 0,
@@ -159,7 +159,7 @@ const quizData = [
     example: "Example: 'Love', 'Truth', and 'Justice' are abstract nouns."
   },
   {
-    id: "GR014",
+    id: "GR214",
     question: "Which is a collective noun?",
     options: ["Soldier", "Gun", "Army", "War"],
     answer: 2,
@@ -167,7 +167,7 @@ const quizData = [
     example: "Example: The army marched forward."
   },
   {
-    id: "GR015",
+    id: "GR215",
     question: "Which is an abstract noun?",
     options: ["Beautiful", "Beautifully", "Beautify", "Beauty"],
     answer: 3,
@@ -175,7 +175,7 @@ const quizData = [
     example: "Example: Natural beauty attracts everyone."
   },
   {
-    id: "GR016",
+    id: "GR216",
     question: "Which is a proper noun?",
     options: ["River", "Padma", "Country", "Mountain"],
     answer: 1,
@@ -183,7 +183,7 @@ const quizData = [
     example: "Example: The Padma is a major river in Bangladesh."
   },
   {
-    id: "GR017",
+    id: "GR217",
     question: "Which is a common noun?",
     options: ["Shakespeare", "Dhaka", "Poet", "Asia"],
     answer: 2,
@@ -191,7 +191,7 @@ const quizData = [
     example: "Example: Kazi Nazrul Islam is our national poet."
   },
   {
-    id: "GR018",
+    id: "GR218",
     question: "Which is a material noun?",
     options: ["Iron", "Class", "Happiness", "Teacher"],
     answer: 0,
@@ -199,7 +199,7 @@ const quizData = [
     example: "Example: Iron is useful for construction."
   },
   {
-    id: "GR019",
+    id: "GR219",
     question: "Which is an abstract noun?",
     options: ["Child", "Childhood", "School", "Toy"],
     answer: 1,
@@ -207,7 +207,7 @@ const quizData = [
     example: "Example: Childhood memories are precious."
   },
   {
-    id: "GR020",
+    id: "GR220",
     question: "“Family” is an example of a ______ noun.",
     options: ["Proper", "Material", "Abstract", "Collective"],
     answer: 3,
