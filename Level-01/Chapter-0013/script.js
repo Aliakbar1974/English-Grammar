@@ -74,7 +74,7 @@ const quizData = [
   {
     id: "GR243",
     question: "Which is the abstract noun of “wise”?",
-    options: ["Wisely", "Wisdom", "Wiseness", "Wise"],
+    options: ["Wisely", "Wisdom", "Wiser", "Wise"],
     answer: 1,
     explanation: "'Wisdom' is the abstract noun of 'wise'. It means the ability to make good decisions.",
     example: "Example: Wisdom comes with experience."
@@ -90,7 +90,7 @@ const quizData = [
   {
     id: "GR245",
     question: "Which is the abstract noun of “strong”?",
-    options: ["Strongly", "Strongness", "Stronger", "Strength"],
+    options: ["Strongly", "Stronger", "Strong", "Strength"],
     answer: 3,
     explanation: "'Strength' is the abstract noun of 'strong'. It refers to the quality of being strong.",
     example: "Example: Exercise helps build strength."
@@ -98,7 +98,7 @@ const quizData = [
   {
     id: "GR246",
     question: "Which is the abstract noun of “poor”?",
-    options: ["Poorly", "Poverty", "Poorness", "Poorer"],
+    options: ["Poorly", "Poverty", "Poor", "Poorer"],
     answer: 1,
     explanation: "'Poverty' is the abstract noun commonly used for the condition of being poor.",
     example: "Example: Education can help reduce poverty."
@@ -114,7 +114,7 @@ const quizData = [
   {
     id: "GR248",
     question: "Which is the abstract noun of “young”?",
-    options: ["Youngly", "Younger", "Youngness", "Youth"],
+    options: ["Youthful", "Younger", "Young", "Youth"],
     answer: 3,
     explanation: "'Youth' is the common abstract noun associated with 'young'. It refers to the state of being young.",
     example: "Example: Youth is a time for learning."
