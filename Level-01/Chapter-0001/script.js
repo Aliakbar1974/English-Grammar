@@ -109,8 +109,8 @@ const quizData = [
     {
         id: "GR007",
         question: "Which word is a conjunction?",
-        options: ["Beautiful", "And", "Quickly", "Table"],
-        answer: 1,
+        options: ["Beautiful", "Quickly", "Table", "And"],
+        answer: 3,
         explanation: "And is a conjunction because it joins words, phrases, or clauses.",
         example: "Rahim and Karim are friends."
     },
@@ -172,8 +172,8 @@ const quizData = [
     {
         id: "GR014",
         question: "Which of the following is a pronoun?",
-        options: ["Teacher", "Education", "We", "Intelligent"],
-        answer: 2,
+        options: ["Teacher", "Education", "Intelligent", "We"],
+        answer: 3,
         explanation: "We is a pronoun because it is used in place of a group of people including the speaker.",
         example: "We are students."
     },
@@ -208,8 +208,8 @@ const quizData = [
     {
         id: "GR018",
         question: "Which word is an adverb?",
-        options: ["Loud", "Loudly", "Loudness", "Louden"],
-        answer: 1,
+        options: ["Loud", "Loudness", "Louden", "Loudly"],
+        answer: 3,
         explanation: "Loudly is an adverb because it describes how an action is performed.",
         example: "The baby cried loudly."
     },
@@ -226,8 +226,8 @@ const quizData = [
     {
         id: "GR020",
         question: "Which word is a verb?",
-        options: ["Decision", "Decisive", "Decide", "Decisively"],
-        answer: 2,
+        options: ["Decision", "Decisive", "Decisively", "Decide"],
+        answer: 3,
         explanation: "Decide is a verb because it expresses an action or mental process.",
         example: "I will decide tomorrow."
     }
