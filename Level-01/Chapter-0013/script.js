@@ -56,7 +56,7 @@ function playSound(soundName) {
 
 const quizData = [
   {
-    id: "GR041",
+    id: "GR241",
     question: "Which is an abstract noun?",
     options: ["Brave", "Bravely", "Bravery", "Braveful"],
     answer: 2,
@@ -64,7 +64,7 @@ const quizData = [
     example: "Example: The soldier showed great bravery."
   },
   {
-    id: "GR042",
+    id: "GR242",
     question: "Which is the abstract noun of “honest”?",
     options: ["Honestly", "Honestness", "Honour", "Honesty"],
     answer: 3,
@@ -72,7 +72,7 @@ const quizData = [
     example: "Example: Honesty is a good quality."
   },
   {
-    id: "GR043",
+    id: "GR243",
     question: "Which is the abstract noun of “wise”?",
     options: ["Wisely", "Wisdom", "Wiseness", "Wise"],
     answer: 1,
@@ -80,7 +80,7 @@ const quizData = [
     example: "Example: Wisdom comes with experience."
   },
   {
-    id: "GR044",
+    id: "GR244",
     question: "Which is the abstract noun of “kind”?",
     options: ["Kindness", "Kindly", "Kindful", "Kinder"],
     answer: 0,
@@ -88,7 +88,7 @@ const quizData = [
     example: "Example: Her kindness made everyone happy."
   },
   {
-    id: "GR045",
+    id: "GR245",
     question: "Which is the abstract noun of “strong”?",
     options: ["Strongly", "Strongness", "Stronger", "Strength"],
     answer: 3,
@@ -96,7 +96,7 @@ const quizData = [
     example: "Example: Exercise helps build strength."
   },
   {
-    id: "GR046",
+    id: "GR246",
     question: "Which is the abstract noun of “poor”?",
     options: ["Poorly", "Poverty", "Poorness", "Poorer"],
     answer: 1,
@@ -104,7 +104,7 @@ const quizData = [
     example: "Example: Education can help reduce poverty."
   },
   {
-    id: "GR047",
+    id: "GR247",
     question: "Which is the abstract noun of “free”?",
     options: ["Freely", "Freeing", "Freedom", "Freeness"],
     answer: 2,
@@ -112,7 +112,7 @@ const quizData = [
     example: "Example: Everyone values freedom."
   },
   {
-    id: "GR048",
+    id: "GR248",
     question: "Which is the abstract noun of “young”?",
     options: ["Youngly", "Younger", "Youngness", "Youth"],
     answer: 3,
@@ -120,7 +120,7 @@ const quizData = [
     example: "Example: Youth is a time for learning."
   },
   {
-    id: "GR049",
+    id: "GR249",
     question: "Which is the abstract noun of “child”?",
     options: ["Childhood", "Childish", "Childlike", "Children"],
     answer: 0,
@@ -128,7 +128,7 @@ const quizData = [
     example: "Example: I have happy memories of my childhood."
   },
   {
-    id: "GR050",
+    id: "GR250",
     question: "Which is the abstract noun of “beautiful”?",
     options: ["Beautify", "Beautifully", "Beauty", "Beautician"],
     answer: 2,
@@ -136,7 +136,7 @@ const quizData = [
     example: "Example: The beauty of nature is amazing."
   },
   {
-    id: "GR051",
+    id: "GR251",
     question: "Which is the abstract noun of “happy”?",
     options: ["Happily", "Happier", "Happy", "Happiness"],
     answer: 3,
@@ -144,7 +144,7 @@ const quizData = [
     example: "Example: Spending time with family brings happiness."
   },
   {
-    id: "GR052",
+    id: "GR252",
     question: "Which is the abstract noun of “angry”?",
     options: ["Angrily", "Anger", "Angrier", "Angry"],
     answer: 1,
@@ -152,7 +152,7 @@ const quizData = [
     example: "Example: He tried to control his anger."
   },
   {
-    id: "GR054",
+    id: "GR253",
     question: "Which is an abstract noun?",
     options: ["Friend", "Friendly", "Friendship", "Befriend"],
     answer: 2,
@@ -160,7 +160,7 @@ const quizData = [
     example: "Example: Their friendship lasted for many years."
   },
   {
-    id: "GR055",
+    id: "GR254",
     question: "Which is an abstract noun?",
     options: ["Know", "Knowing", "Known", "Knowledge"],
     answer: 3,
@@ -168,7 +168,7 @@ const quizData = [
     example: "Example: Reading increases our knowledge."
   },
   {
-    id: "GR056",
+    id: "GR255",
     question: "Which is an abstract noun?",
     options: ["Justice", "Just", "Justly", "Justify"],
     answer: 0,
@@ -176,7 +176,7 @@ const quizData = [
     example: "Example: Everyone deserves justice."
   },
   {
-    id: "GR057",
+    id: "GR256",
     question: "Which is an abstract noun?",
     options: ["Patient", "Patience", "Patiently", "Impatient"],
     answer: 1,
@@ -184,7 +184,7 @@ const quizData = [
     example: "Example: Learning a new language requires patience."
   },
   {
-    id: "GR058",
+    id: "GR257",
     question: "Which is an abstract noun?",
     options: ["Laugh", "Laughing", "Laughter", "Laughable"],
     answer: 2,
@@ -192,7 +192,7 @@ const quizData = [
     example: "Example: The room was filled with laughter."
   },
   {
-    id: "GR059",
+    id: "GR258",
     question: "Which is an abstract noun?",
     options: ["Successful", "Successfully", "Succeed", "Success"],
     answer: 3,
