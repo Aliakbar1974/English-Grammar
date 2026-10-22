@@ -56,7 +56,7 @@ function playSound(soundName) {
 
 const quizData = [
   {
-    id: "GR021",
+    id: "GR221",
     question: "Which word is a proper noun?",
     options: ["Bangladesh", "Country", "Nation", "State"],
     answer: 0,
@@ -64,7 +64,7 @@ const quizData = [
     example: "Example: Bangladesh is a beautiful country."
   },
   {
-    id: "GR022",
+    id: "GR222",
     question: "Which word is a common noun?",
     options: ["London", "City", "England", "Europe"],
     answer: 1,
@@ -72,7 +72,7 @@ const quizData = [
     example: "Example: Dhaka is a large city."
   },
   {
-    id: "GR023",
+    id: "GR223",
     question: "“Asia” is a ______ noun.",
     options: ["Common", "Collective", "Proper", "Abstract"],
     answer: 2,
@@ -80,7 +80,7 @@ const quizData = [
     example: "Example: Asia is the largest continent."
   },
   {
-    id: "GR024",
+    id: "GR224",
     question: "“Continent” is a ______ noun.",
     options: ["Proper", "Abstract", "Material", "Common"],
     answer: 3,
@@ -88,7 +88,7 @@ const quizData = [
     example: "Example: Africa is a continent."
   },
   {
-    id: "GR025",
+    id: "GR225",
     question: "Which is a proper noun?",
     options: ["Himalayas", "Mountain", "River", "Sea"],
     answer: 0,
@@ -96,7 +96,7 @@ const quizData = [
     example: "Example: The Himalayas contain many of the world's highest mountains."
   },
   {
-    id: "GR026",
+    id: "GR226",
     question: "Which is a common noun?",
     options: ["Padma", "River", "Jamuna", "Nile"],
     answer: 1,
@@ -104,7 +104,7 @@ const quizData = [
     example: "Example: The Padma is a major river in Bangladesh."
   },
   {
-    id: "GR027",
+    id: "GR227",
     question: "Which is a proper noun?",
     options: ["Poet", "Writer", "Rabindranath Tagore", "Author"],
     answer: 2,
@@ -112,7 +112,7 @@ const quizData = [
     example: "Example: Rabindranath Tagore wrote India's national anthem."
   },
   {
-    id: "GR028",
+    id: "GR228",
     question: "“Poet” is a ______ noun.",
     options: ["Proper", "Abstract", "Material", "Common"],
     answer: 3,
@@ -120,7 +120,7 @@ const quizData = [
     example: "Example: The poet wrote a beautiful poem."
   },
   {
-    id: "GR029",
+    id: "GR229",
     question: "Which is a proper noun?",
     options: ["January", "Month", "Season", "Year"],
     answer: 0,
@@ -128,7 +128,7 @@ const quizData = [
     example: "Example: January is the first month of the year."
   },
   {
-    id: "GR030",
+    id: "GR230",
     question: "Which is a common noun?",
     options: ["Friday", "Day", "Sunday", "Monday"],
     answer: 1,
@@ -136,7 +136,7 @@ const quizData = [
     example: "Example: Today is a beautiful day."
   },
   {
-    id: "GR031",
+    id: "GR231",
     question: "Which is a proper noun?",
     options: ["Language", "Country", "Bengali", "Nation"],
     answer: 2,
@@ -144,7 +144,7 @@ const quizData = [
     example: "Example: Bengali is widely spoken in Bangladesh."
   },
   {
-    id: "GR032",
+    id: "GR232",
     question: "Which is a common noun?",
     options: ["Bangladesh", "Dhaka", "Asia", "Capital"],
     answer: 3,
@@ -152,7 +152,7 @@ const quizData = [
     example: "Example: Dhaka is the capital of Bangladesh."
   },
   {
-    id: "GR033",
+    id: "GR233",
     question: "“The Padma is a large river.” Which is a proper noun?",
     options: ["The", "Large", "Padma", "River"],
     answer: 2,
@@ -160,7 +160,7 @@ const quizData = [
     example: "Example: The Padma flows through Bangladesh."
   },
   {
-    id: "GR034",
+    id: "GR234",
     question: "“Dhaka is a busy city.” Which is a common noun?",
     options: ["Dhaka", "Is", "Busy", "City"],
     answer: 3,
@@ -168,7 +168,7 @@ const quizData = [
     example: "Example: Dhaka is a busy city."
   },
   {
-    id: "GR035",
+    id: "GR235",
     question: "Which pair contains two proper nouns?",
     options: ["Dhaka, Bangladesh", "City, country", "River, Padma", "Teacher, Rahim"],
     answer: 0,
@@ -176,7 +176,7 @@ const quizData = [
     example: "Example: Dhaka is a city in Bangladesh."
   },
   {
-    id: "GR036",
+    id: "GR236",
     question: "Which pair contains two common nouns?",
     options: ["Dhaka, city", "Teacher, school", "Bangladesh, country", "Asia, continent"],
     answer: 1,
@@ -184,7 +184,7 @@ const quizData = [
     example: "Example: The teacher works at the school."
   },
   {
-    id: "GR037",
+    id: "GR237",
     question: "“The Nile is a river.” The word “Nile” is a ______ noun.",
     options: ["Common", "Abstract", "Proper", "Collective"],
     answer: 2,
@@ -192,7 +192,7 @@ const quizData = [
     example: "Example: The Nile is one of Africa's major rivers."
   },
   {
-    id: "GR038",
+    id: "GR238",
     question: "“The Nile is a river.” The word “river” is a ______ noun.",
     options: ["Proper", "Material", "Abstract", "Common"],
     answer: 3,
@@ -200,7 +200,7 @@ const quizData = [
     example: "Example: The Nile is a river in Africa."
   },
   {
-    id: "GR039",
+    id: "GR239",
     question: "Which is NOT a proper noun?",
     options: ["Country", "India", "Asia", "Japan"],
     answer: 0,
@@ -208,7 +208,7 @@ const quizData = [
     example: "Example: Japan is a country in Asia."
   },
   {
-    id: "GR040",
+    id: "GR240",
     question: "Which is NOT a common noun?",
     options: ["School", "Dhaka", "Teacher", "Student"],
     answer: 1,
