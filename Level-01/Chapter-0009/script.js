@@ -182,11 +182,11 @@ const quizData = [
 
   {
     id: "GR174",
-    question: "Choose the correct article: \"He plays ___ guitar.\"",
+    question: "Choose the correct article: \"He plays ___ guitar that his father bought yesterday.\"",
     options: ["A", "An", "No article", "The"],
     answer: 3,
-    explanation: "We generally use 'the' before musical instruments when talking about playing them.",
-    example: "Example: He plays the guitar."
+    explanation: "Use 'the' because the relative clause 'that his father bought yesterday' identifies a specific guitar.",
+    example: "Example: He plays the guitar that his father bought yesterday."
   },
 
   {
@@ -209,10 +209,10 @@ const quizData = [
 
   {
     id: "GR177",
-    question: "Choose the correct article: \"___ Earth moves around the Sun.\"",
+    question: "Choose the correct article: \"The Earth moves around ___ Sun.\"",
     options: ["A", "An", "The", "No article"],
     answer: 2,
-    explanation: "We use 'the' with unique celestial bodies such as the Earth and the Sun.",
+    explanation: "We use 'the' before 'Sun' when referring to our Solar System's star.",
     example: "Example: The Earth moves around the Sun."
   },
 
