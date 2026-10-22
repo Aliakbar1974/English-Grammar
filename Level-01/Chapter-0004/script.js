@@ -95,11 +95,11 @@ const quizData = [
     },
     {
         id: "GR066",
-        question: "Which is a numeral adjective?",
+        question: "In the sentence \"I have five pens,\" which word is a numeral adjective?",
         options: ["Five", "Beautiful", "This", "My"],
         answer: 0,
-        explanation: "'Five' একটি Numeral Adjective বা Adjective of Number, কারণ এটি একটি নির্দিষ্ট সংখ্যা নির্দেশ করে।",
-        example: "I have five pens."
+        explanation: "'Five' একটি Numeral Adjective বা Adjective of Number, কারণ এটি 'pens' noun-এর সংখ্যা নির্দেশ করে।",
+        example: "I have five pens. — 'Five' tells us how many pens."
     },
     {
         id: "GR067",
