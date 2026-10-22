@@ -165,7 +165,7 @@ const quizData = [
   {
     id: "GR194",
     question: "Identify the object: “Rahim reads a book.”",
-    options: ["Book", "Rahim", "Reads", "A"],
+    options: ["A book", "Rahim", "Reads", "A"],
     answer: 0,
     explanation: "'A book' is the object of the verb 'reads'. The noun 'book' receives the action.",
     example: "Example: Rahim reads a book. — book = Object."
