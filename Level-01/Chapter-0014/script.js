@@ -129,11 +129,11 @@ const quizData = [
   },
   {
     id: "GR268",
-    question: "A vast system of stars, gas, and dust is called a ____.",
-    options: ["Team", "Galaxy", "Herd", "Pack"],
+    question: "A group of islands is called an ____.",
+    options: ["Team", "Archipelago", "Herd", "Pack"],
     answer: 1,
-    explanation: "'Galaxy' names a vast system containing stars, gas, and dust.",
-    example: "The Milky Way is the galaxy that contains our Solar System."
+    explanation: "'Archipelago' is a collective noun for a group or chain of islands.",
+    example: "Indonesia is an archipelago made up of thousands of islands."
   },
   {
     id: "GR269",
