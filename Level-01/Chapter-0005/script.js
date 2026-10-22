@@ -265,7 +265,7 @@ const quizData = [
 
   {
     id: "GR096",
-    question: "Which is a transitive verb?",
+    question: "Which word is the transitive verb in the sentence \"They eat rice\"?",
     options: [
       "Sleep",
       "Arrive",
