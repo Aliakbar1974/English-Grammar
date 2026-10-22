@@ -64,7 +64,7 @@ const quizData = [
 
   {
     id: "GR162",
-    question: "Which article is used before a singular countable noun beginning with a consonant sound?",
+    question: "Which indefinite article is normally used before a nonspecific singular countable noun beginning with a consonant sound?",
     options: ["An", "A", "The", "No article"],
     answer: 1,
     explanation: "The article 'A' is used before a singular countable noun beginning with a consonant sound.",
@@ -73,7 +73,7 @@ const quizData = [
 
   {
     id: "GR163",
-    question: "Which article is used before a word beginning with a vowel sound?",
+    question: "Which indefinite article is normally used before a word beginning with a vowel sound?",
     options: ["A", "The", "No article", "An"],
     answer: 3,
     explanation: "The article 'An' is used before a word beginning with a vowel sound.",
