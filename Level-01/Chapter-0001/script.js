@@ -55,7 +55,7 @@ const quizData = [
     {
         id: "GR001",
         question: "Which of the following is a noun?",
-        options: ["Beautiful", "Honesty", "Quickly", "Run"],
+        options: ["Beautiful", "Honesty", "Quickly", "Happy"],
         answer: 1,
         explanation: "Honesty is a noun because it names a quality or state.",
         example: "Honesty is the best policy."
