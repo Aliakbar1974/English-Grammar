@@ -120,10 +120,10 @@ const quizData = [
   },
   {
     id: "092",
-    question: "Which is NOT a material noun?",
+    question: "Which word names a quality rather than a physical material?",
     options: ["Water", "Happiness", "Rice", "Milk"],
     answer: 1,
-    explanation: "Happiness is an abstract noun representing a feeling or state of mind, unlike material nouns.<br><br><strong>Example:</strong> Money cannot buy true happiness."
+    explanation: "Happiness is an abstract noun because it names a feeling or state, not a physical substance.<br><br><strong>Example:</strong> Happiness can come from helping others."
   },
   {
     id: "093",
