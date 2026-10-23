@@ -43,73 +43,73 @@ function playSound(soundName) {
 const quizData = [
   {
     id: "081",
-    question: "Which is a material noun?",
-    options: ["A person who gives legal advice", "A person who travels frequently", "Gold", "A person who enjoys public attention"],
+    question: "Which word names a precious metal commonly used to make jewellery?",
+    options: ["Jeweller", "Ornament", "Gold", "Beauty"],
     answer: 2,
-    explanation: "Gold is a material noun because it refers to a substance or matter from which things are made.<br><br><strong>Example:</strong> Gold is a precious metal."
+    explanation: "Gold is a material noun because it names a physical substance used to make objects.<br><br><strong>Example:</strong> Gold is a precious metal."
   },
   {
     id: "082",
-    question: "Which is a material noun?",
-    options: ["Water", "Swimming", "Wet", "River"],
+    question: "Which word names a liquid substance essential for life?",
+    options: ["Water", "Swim", "Wet", "River"],
     answer: 0,
-    explanation: "Water is a material noun as it represents a physical substance.<br><br><strong>Example:</strong> Water is essential for survival."
+    explanation: "Water is a material noun because it names a physical substance rather than an action or quality.<br><br><strong>Example:</strong> Clean water is essential for survival."
   },
   {
     id: "083",
-    question: "Which is a material noun?",
-    options: ["Irony", "Strong", "Strength", "Iron"],
+    question: "Which option names a metal used to make tools and machinery?",
+    options: ["Irony", "Strength", "Strong", "Iron"],
     answer: 3,
-    explanation: "Iron is a material noun because it denotes a metal substance.<br><br><strong>Example:</strong> Iron is a strong and durable metal."
+    explanation: "Iron is a material noun because it names a metal substance.<br><br><strong>Example:</strong> Iron is used to manufacture many tools."
   },
   {
     id: "084",
-    question: "Which is a material noun?",
+    question: "Which material is obtained from trees and often used to make furniture?",
     options: ["Forest", "Wood", "Garden", "Tree"],
     answer: 1,
-    explanation: "Wood is a material noun as it is a substance obtained from trees.<br><br><strong>Example:</strong> The chair is made of wood."
+    explanation: "Wood is a material noun because it names a substance obtained from trees and used to make objects.<br><br><strong>Example:</strong> The table is made of wood."
   },
   {
     id: "085",
-    question: "Which is a material noun?",
-    options: ["Tailor", "Clothes", "Cotton", "Shirt"],
+    question: "Which natural fibre is used to make many types of clothing?",
+    options: ["Tailor", "Shirt", "Cotton", "Clothing"],
     answer: 2,
-    explanation: "Cotton is a material noun because it is a raw fiber used to make clothes.<br><br><strong>Example:</strong> Cotton grows in warm climates."
+    explanation: "Cotton is a material noun because it names a fibre used to manufacture fabric.<br><br><strong>Example:</strong> This shirt is made of cotton."
   },
   {
     id: "086",
-    question: "Which is a material noun?",
+    question: "Which precious metal is commonly used in coins and ornaments?",
     options: ["Silver", "Jeweller", "Beauty", "Necklace"],
     answer: 0,
-    explanation: "Silver is a material noun representing a precious metallic substance.<br><br><strong>Example:</strong> Silver is used to make coins and ornaments."
+    explanation: "Silver is a material noun because it names a metallic substance.<br><br><strong>Example:</strong> The necklace is made of silver."
   },
   {
     id: "087",
-    question: "Which is a material noun?",
+    question: "Which word names a liquid food substance produced by mammals?",
     options: ["Farmer", "Dairy", "Cow", "Milk"],
     answer: 3,
-    explanation: "Milk is a material noun as it is a physical substance or liquid food.<br><br><strong>Example:</strong> Milk is rich in calcium."
+    explanation: "Milk is a material noun because it names a physical substance used as food.<br><br><strong>Example:</strong> Milk is rich in calcium."
   },
   {
     id: "088",
-    question: "Which is a material noun?",
+    question: "Which grain is commonly cooked as a staple food in Bangladesh?",
     options: ["Plate", "Rice", "Restaurant", "Meal"],
     answer: 1,
-    explanation: "Rice is a material noun representing a food grain substance.<br><br><strong>Example:</strong> Rice is the staple food for many people."
+    explanation: "Rice is a material noun when it refers to the grain as a substance or food material.<br><br><strong>Example:</strong> Rice is cooked in many households every day."
   },
   {
     id: "089",
-    question: "Which is a material noun?",
+    question: "Which substance is often added to tea to make it sweet?",
     options: ["Sweetness", "Sweetly", "Sugar", "Sweet"],
     answer: 2,
-    explanation: "Sugar is a material noun because it is a substance used to sweeten food.<br><br><strong>Example:</strong> Add some sugar to your tea."
+    explanation: "Sugar is a material noun because it names a substance used to sweeten food and drinks.<br><br><strong>Example:</strong> Add a little sugar to the tea."
   },
   {
     id: "090",
-    question: "Which is a material noun?",
+    question: "Which alloy of iron is widely used in bridges and buildings?",
     options: ["Steel", "Engineer", "Strength", "Building"],
     answer: 0,
-    explanation: "Steel is a material noun as it is an alloy of iron used in construction.<br><br><strong>Example:</strong> Modern bridges are built using steel."
+    explanation: "Steel is a material noun because it names an alloy used as a construction material.<br><br><strong>Example:</strong> The bridge is supported by steel beams."
   },
   {
     id: "091",
@@ -148,38 +148,38 @@ const quizData = [
   },
   {
     id: "096",
-    question: "Which is a material noun?",
-    options: ["Machine", "Factory", "Worker", "Copper"],
+    question: "Which metal is commonly used in electrical wiring?",
+    options: ["Electrician", "Wire", "Current", "Copper"],
     answer: 3,
-    explanation: "Copper is a material noun because it is a chemical element and metal substance.<br><br><strong>Example:</strong> Copper is an excellent conductor of electricity."
+    explanation: "Copper is a material noun because it names a metal used to make many electrical wires.<br><br><strong>Example:</strong> Copper is a good conductor of electricity."
   },
   {
     id: "097",
-    question: "Which is a material noun?",
-    options: ["Engine", "Oil", "Driver", "Road"],
+    question: "Which material is refined to produce fuels such as petrol and diesel?",
+    options: ["Coal", "Oil", "Engine", "Smoke"],
     answer: 1,
-    explanation: "Oil is a material noun as it is a liquid substance used for various purposes.<br><br><strong>Example:</strong> Olive oil is good for health."
+    explanation: "Oil is a material noun because it names a substance from which several fuels are produced.<br><br><strong>Example:</strong> Crude oil is processed in a refinery."
   },
   {
     id: "098",
-    question: "Which is a material noun?",
-    options: ["Mine", "Miner", "Coal", "Industry"],
+    question: "Which solid fossil fuel is classified as a material noun?",
+    options: ["Mine", "Miner", "Coal", "Smoke"],
     answer: 2,
-    explanation: "Coal is a material noun because it is a combustible black rock substance.<br><br><strong>Example:</strong> Coal is used to generate electricity."
+    explanation: "Coal is a material noun because it names a natural substance used as a fuel.<br><br><strong>Example:</strong> Coal has been used to produce energy."
   },
   {
     id: "099",
-    question: "Which is a material noun?",
-    options: ["Leather", "Shoe", "Foot", "Fashion"],
+    question: "Which animal-derived material is commonly used to make shoes and belts?",
+    options: ["Leather", "Shoemaker", "Shoe", "Belt"],
     answer: 0,
-    explanation: "Leather is a material noun as it is processed animal skin used to make goods.<br><br><strong>Example:</strong> This jacket is made of genuine leather."
+    explanation: "Leather is a material noun because it names a material made from treated animal hide.<br><br><strong>Example:</strong> The belt is made of leather."
   },
   {
     id: "100",
-    question: "Which is a material noun?",
-    options: ["Baker", "Bakery", "Hunger", "Bread"],
+    question: "Which natural substance is commonly used to make pottery and bricks?",
+    options: ["Potter", "Vase", "Brick", "Clay"],
     answer: 3,
-    explanation: "Bread is considered a material noun in terms of a substance/food item made from flour.<br><br><strong>Example:</strong> He ate a slice of bread for breakfast."
+    explanation: "Clay is a material noun because it names a natural substance used to make pottery and bricks.<br><br><strong>Example:</strong> The potter shaped the clay into a bowl."
   }
 ];
 
