@@ -1,13 +1,16 @@
 
- // ============================================================
- // GENERAL KNOWLEDGE Junior — MCQ BANK PART 02
- // Topic: Geography | 20 Questions
- // Learning Mode + Exam Mode | 15 Seconds per Question
- // Sound Engine + Facebook Return + Result Screen
- // ============================================================
+"use strict";
 
-const FACEBOOK_POST_URL = "https://www.facebook.com/photo?fbid=122125141119435742&set=a.122102731923435742";
+// ============================================================
+// ENGLISH GRAMMAR QUIZ 24
+// Topic: reflexive Pronouns
+// 20 Questions | Learning Mode + Exam Mode
+// 15 Seconds per Question
+// ============================================================
 
+// Facebook post URL
+const FACEBOOK_POST_URL =
+    "https://www.facebook.com/photo?fbid=122124982593435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -34,179 +37,202 @@ function playSound(soundName) {
     });
 }
 
-
 // ============================================================
 // QUIZ DATA
-// explanation এবং example আলাদা রাখা হয়েছে
-// answer index: 0=A, 1=B, 2=C, 3=D
+// answer: 0 = A, 1 = B, 2 = C, 3 = D
 // ============================================================
+
 
 
 
 const quizData = [
  
-  {
-    id: "GEO021",
-    question: "নিরক্ষরেখা পৃথিবীর কত ডিগ্রি অক্ষাংশে অবস্থিত?",
-    options: ["০°", "২৩.৫° উত্তর", "৬৬.৫° দক্ষিণ", "৯০°"],
+ {
+    id: "061",
+    question: "Which is a reflexive pronoun?",
+    options: ["Himself", "Him", "His", "He"],
     answer: 0,
-    explanation: "নিরক্ষরেখা পৃথিবীর ০° অক্ষাংশে অবস্থিত। এটি পৃথিবীকে উত্তর ও দক্ষিণ গোলার্ধে সমান দুই ভাগে বিভক্ত করেছে।",
-    example: "নিরক্ষরেখার উত্তর দিকে উত্তর অক্ষাংশ এবং দক্ষিণ দিকে দক্ষিণ অক্ষাংশ গণনা করা হয়।"
+    explanation: "Himself is a reflexive pronoun. It refers back to the subject when the subject and object are the same person.",
+    example: "He hurt himself while playing."
   },
   {
-    id: "GEO022",
-    question: "পৃথিবীর উত্তরতম ও দক্ষিণতম বিন্দুকে কী বলা হয়?",
-    options: ["ক্রান্তিবিন্দু", "মেরু", "নিরক্ষরেখা", "মধ্যরেখা"],
+    id: "062",
+    question: "Which is the reflexive form of “I”?",
+    options: ["Me", "Myself", "My", "Mine"],
     answer: 1,
-    explanation: "পৃথিবীর উত্তরতম ও দক্ষিণতম বিন্দুকে যথাক্রমে উত্তর মেরু ও দক্ষিণ মেরু বলা হয়। এই দুই বিন্দু পৃথিবীর ঘূর্ণন অক্ষের দুই প্রান্তে অবস্থিত।",
-    example: "উত্তর মেরু আর্কটিক অঞ্চলে এবং দক্ষিণ মেরু অ্যান্টার্কটিকা মহাদেশে অবস্থিত।"
+    explanation: "Myself is the reflexive form of the personal pronoun 'I'. It is used when the subject and object refer to the same person.",
+    example: "I prepared myself for the examination."
   },
   {
-    id: "GEO023",
-    question: "উত্তর মেরু কোন গোলার্ধে অবস্থিত?",
-    options: ["দক্ষিণ গোলার্ধ", "পূর্ব গোলার্ধ", "উত্তর গোলার্ধ", "পশ্চিম গোলার্ধ"],
+    id: "063",
+    question: "Which is the reflexive form of “you” (singular)?",
+    options: ["Yours", "Your", "Yourself", "You"],
     answer: 2,
-    explanation: "উত্তর মেরু নিরক্ষরেখার উত্তরে অবস্থিত বলে এটি উত্তর গোলার্ধের অন্তর্ভুক্ত। এটি পৃথিবীর ৯০° উত্তর অক্ষাংশে অবস্থিত।",
-    example: "কানাডা, রাশিয়া ও গ্রিনল্যান্ডের উত্তরাঞ্চল উত্তর মেরুর কাছাকাছি অবস্থিত।"
+    explanation: "Yourself is the singular reflexive form of 'you'. It refers to the person being addressed.",
+    example: "You should believe in yourself."
   },
   {
-    id: "GEO024",
-    question: "দক্ষিণ মেরু কোন মহাদেশে অবস্থিত?",
-    options: ["এশিয়া", "আফ্রিকা", "ইউরোপ", "অ্যান্টার্কটিকা"],
+    id: "064",
+    question: "Which is the reflexive form of “he”?",
+    options: ["Him", "His", "He", "Himself"],
     answer: 3,
-    explanation: "দক্ষিণ মেরু অ্যান্টার্কটিকা মহাদেশে অবস্থিত। এটি পৃথিবীর সর্বদক্ষিণের ভৌগোলিক বিন্দু এবং বরফে আবৃত একটি অঞ্চল।",
-    example: "অ্যান্টার্কটিকা পৃথিবীর শীতলতম মহাদেশ।"
+    explanation: "Himself is the reflexive form of 'he'. It is used when a male person performs an action on himself.",
+    example: "He introduced himself to the teacher."
   },
   {
-    id: "GEO025",
-    question: "পৃথিবীর সবচেয়ে বড় দ্বীপ কোনটি?",
-    options: ["গ্রিনল্যান্ড", "নিউগিনি", "বোর্নিও", "মাদাগাস্কার"],
+    id: "065",
+    question: "Which is the reflexive form of “she”?",
+    options: ["Herself", "Her", "Hers", "She"],
     answer: 0,
-    explanation: "গ্রিনল্যান্ড পৃথিবীর বৃহত্তম দ্বীপ। অস্ট্রেলিয়াকে মহাদেশ হিসেবে গণ্য করা হয়, তাই দ্বীপের তালিকায় গ্রিনল্যান্ড সবচেয়ে বড়।",
-    example: "গ্রিনল্যান্ড উত্তর আটলান্টিক ও আর্কটিক মহাসাগরের মধ্যে অবস্থিত।"
+    explanation: "Herself is the reflexive form of 'she'. It refers back to a female subject.",
+    example: "She looked at herself in the mirror."
   },
   {
-    id: "GEO026",
-    question: "সাহারা মরুভূমি কোন মহাদেশে অবস্থিত?",
-    options: ["এশিয়া", "আফ্রিকা", "অস্ট্রেলিয়া", "দক্ষিণ আমেরিকা"],
+    id: "066",
+    question: "Which is the reflexive form of “it”?",
+    options: ["Its", "Itself", "It", "Its own"],
     answer: 1,
-    explanation: "সাহারা মরুভূমি উত্তর আফ্রিকায় অবস্থিত। এটি পৃথিবীর বৃহত্তম উষ্ণ মরুভূমি।",
-    example: "আলজেরিয়া, মিশর, লিবিয়া ও সুদান সাহারা অঞ্চলের অন্তর্ভুক্ত দেশ।"
+    explanation: "Itself is the reflexive form of 'it'. It is used for animals, objects, or other non-human subjects when appropriate.",
+    example: "The cat cleaned itself."
   },
   {
-    id: "GEO027",
-    question: "আমাজন নদী প্রধানত কোন মহাদেশে প্রবাহিত?",
-    options: ["আফ্রিকা", "এশিয়া", "দক্ষিণ আমেরিকা", "উত্তর আমেরিকা"],
+    id: "067",
+    question: "Which is the reflexive form of “we”?",
+    options: ["Us", "Our", "Ourselves", "Ours"],
     answer: 2,
-    explanation: "আমাজন নদী দক্ষিণ আমেরিকায় অবস্থিত। এটি পানিপ্রবাহের পরিমাণের দিক থেকে পৃথিবীর বৃহত্তম নদী।",
-    example: "আমাজন নদী পেরু থেকে উৎপন্ন হয়ে ব্রাজিলের মধ্য দিয়ে আটলান্টিক মহাসাগরে পতিত হয়েছে।"
+    explanation: "Ourselves is the reflexive form of 'we'. It refers back to the speaker and other people included in 'we'.",
+    example: "We enjoyed ourselves at the party."
   },
   {
-    id: "GEO028",
-    question: "নীলনদ কোন মহাদেশে অবস্থিত?",
-    options: ["ইউরোপ", "এশিয়া", "দক্ষিণ আমেরিকা", "আফ্রিকা"],
+    id: "068",
+    question: "Which is the reflexive form of “they”?",
+    options: ["Them", "Their", "Theirs", "Themselves"],
     answer: 3,
-    explanation: "নীলনদ আফ্রিকা মহাদেশে অবস্থিত। এটি আফ্রিকার অন্যতম প্রধান নদী এবং ঐতিহাসিকভাবে মিশরের সভ্যতা বিকাশে গুরুত্বপূর্ণ ভূমিকা রেখেছে।",
-    example: "নীলনদ মিশরের মধ্য দিয়ে প্রবাহিত হয়ে ভূমধ্যসাগরে পতিত হয়েছে।"
+    explanation: "Themselves is the reflexive form of 'they'. It refers back to the plural subject.",
+    example: "They introduced themselves to the guests."
   },
   {
-    id: "GEO029",
-    question: "আল্পস পর্বতমালা কোন মহাদেশে অবস্থিত?",
-    options: ["ইউরোপ", "এশিয়া", "আফ্রিকা", "উত্তর আমেরিকা"],
+    id: "069",
+    question: "Complete the sentence: “I hurt _____.”",
+    options: ["myself", "me", "my", "mine"],
     answer: 0,
-    explanation: "আল্পস পর্বতমালা ইউরোপের মধ্য ও দক্ষিণাঞ্চলে বিস্তৃত। এটি ইউরোপের অন্যতম প্রধান পর্বতশ্রেণি।",
-    example: "সুইজারল্যান্ড, ফ্রান্স, ইতালি ও অস্ট্রিয়ার মধ্য দিয়ে আল্পস পর্বতমালা বিস্তৃত।"
+    explanation: "Myself is correct because the subject 'I' and the object refer to the same person. A reflexive pronoun is needed.",
+    example: "I hurt myself while running."
   },
   {
-    id: "GEO030",
-    question: "হিমালয় কোন মহাদেশে অবস্থিত?",
-    options: ["আফ্রিকা", "এশিয়া", "ইউরোপ", "দক্ষিণ আমেরিকা"],
+    id: "070",
+    question: "Complete the sentence: “She looked at _____ in the mirror.”",
+    options: ["her", "herself", "hers", "she"],
     answer: 1,
-    explanation: "হিমালয় পর্বতমালা এশিয়া মহাদেশে অবস্থিত। পৃথিবীর সর্বোচ্চ পর্বতশৃঙ্গ মাউন্ট এভারেস্ট এই পর্বতমালায় অবস্থিত।",
-    example: "নেপাল, ভারত, ভুটান, চীন ও পাকিস্তানের বিভিন্ন অঞ্চলে হিমালয় বিস্তৃত।"
+    explanation: "Herself is correct because 'she' is both the subject and the person being looked at.",
+    example: "She looked at herself in the mirror."
   },
   {
-    id: "GEO031",
-    question: "রকি পর্বতমালা কোন মহাদেশে অবস্থিত?",
-    options: ["দক্ষিণ আমেরিকা", "ইউরোপ", "উত্তর আমেরিকা", "আফ্রিকা"],
+    id: "071",
+    question: "Complete the sentence: “He blamed _____ for the mistake.”",
+    options: ["him", "his", "himself", "he"],
     answer: 2,
-    explanation: "রকি পর্বতমালা উত্তর আমেরিকার পশ্চিমাঞ্চলে বিস্তৃত। এটি কানাডা থেকে যুক্তরাষ্ট্রের বিভিন্ন অঞ্চল পর্যন্ত প্রসারিত।",
-    example: "কানাডার ব্রিটিশ কলাম্বিয়া ও যুক্তরাষ্ট্রের কলোরাডো রকি পর্বতমালার অংশ।"
+    explanation: "Himself is correct because the subject 'he' blames the same person who made the mistake.",
+    example: "He blamed himself for the failure."
   },
   {
-    id: "GEO032",
-    question: "আন্দিজ পর্বতমালা কোন মহাদেশে অবস্থিত?",
-    options: ["এশিয়া", "আফ্রিকা", "উত্তর আমেরিকা", "দক্ষিণ আমেরিকা"],
+    id: "072",
+    question: "Complete the sentence: “We enjoyed _____ at the party.”",
+    options: ["us", "our", "ours", "ourselves"],
     answer: 3,
-    explanation: "আন্দিজ পর্বতমালা দক্ষিণ আমেরিকার পশ্চিম উপকূল বরাবর বিস্তৃত। এটি পৃথিবীর দীর্ঘতম মহাদেশীয় পর্বতমালা।",
-    example: "চিলি, পেরু, বলিভিয়া ও আর্জেন্টিনায় আন্দিজ পর্বতমালা বিস্তৃত।"
+    explanation: "Ourselves is correct because it refers back to the subject 'we'. The verb 'enjoy' commonly takes a reflexive pronoun in this expression.",
+    example: "We enjoyed ourselves at the party."
   },
   {
-    id: "GEO033",
-    question: "আটলান্টিক মহাসাগর কোন দুটি মহাদেশের মাঝখানে বিস্তৃত?",
-    options: ["ইউরোপ ও উত্তর আমেরিকা", "এশিয়া ও আফ্রিকা", "আফ্রিকা ও অস্ট্রেলিয়া", "এশিয়া ও উত্তর আমেরিকা"],
+    id: "073",
+    question: "Complete the sentence: “They introduced _____ to the guests.”",
+    options: ["them", "their", "theirs", "themselves"],
+    answer: 3,
+    explanation: "Themselves is correct because the subject 'they' performs the action of introducing the same people.",
+    example: "They introduced themselves to the guests."
+  },
+  {
+    id: "074",
+    question: "Complete the sentence: “You should do it _____.”",
+    options: ["yourself", "yours", "your", "you"],
     answer: 0,
-    explanation: "আটলান্টিক মহাসাগর প্রধানত ইউরোপ ও আফ্রিকার পশ্চিমে এবং উত্তর ও দক্ষিণ আমেরিকার পূর্বে অবস্থিত। প্রদত্ত বিকল্পগুলোর মধ্যে ইউরোপ ও উত্তর আমেরিকা সঠিক।",
-    example: "আটলান্টিক মহাসাগর ইউরোপ ও উত্তর আমেরিকার মধ্যে গুরুত্বপূর্ণ নৌপথ তৈরি করেছে।"
+    explanation: "Yourself is correct because it emphasizes that the person being addressed should do the task without help.",
+    example: "You should complete the work yourself."
   },
   {
-    id: "GEO034",
-    question: "ভারত মহাসাগর কোন মহাদেশের নাম অনুসারে নামকরণ করা হয়েছে?",
-    options: ["আফ্রিকা", "এশিয়া", "ইউরোপ", "অস্ট্রেলিয়া"],
+    id: "075",
+    question: "Which sentence is correct?",
+    options: [
+      "He hurt him.",
+      "He hurt himself.",
+      "He hurt his.",
+      "He hurt he."
+    ],
     answer: 1,
-    explanation: "ভারত মহাসাগরের নাম ভারত দেশের নাম অনুসারে রাখা হয়েছে। ভারত এশিয়া মহাদেশে অবস্থিত।",
-    example: "ভারত মহাসাগরের উত্তরে ভারতীয় উপমহাদেশ অবস্থিত।"
+    explanation: "He hurt himself is correct when the person who was hurt is the same person who performed the action. 'Himself' is the reflexive pronoun.",
+    example: "He hurt himself while playing football."
   },
   {
-    id: "GEO035",
-    question: "প্রশান্ত মহাসাগর পৃথিবীর সবচেয়ে বড় মহাসাগর—এটি কোন ধরনের জলভাগ?",
-    options: ["উপসাগর", "সাগর", "মহাসাগর", "হ্রদ"],
+    id: "076",
+    question: "Which sentence is correct?",
+    options: [
+      "She taught her English herselfs.",
+      "She taught hers English.",
+      "She taught herself English.",
+      "She taught she English."
+    ],
     answer: 2,
-    explanation: "প্রশান্ত মহাসাগর পৃথিবীর বৃহত্তম ও গভীরতম মহাসাগর। এটি পৃথিবীর মোট পৃষ্ঠের একটি বিশাল অংশজুড়ে বিস্তৃত।",
-    example: "প্রশান্ত মহাসাগরে মারিয়ানা খাত অবস্থিত, যা পৃথিবীর গভীরতম পরিচিত সমুদ্রতলীয় স্থান।"
+    explanation: "She taught herself English is grammatically correct. 'Herself' is used as the reflexive object of the verb 'taught'.",
+    example: "She taught herself English at home."
   },
   {
-    id: "GEO036",
-    question: "যে ভূমিভাগ চারদিকে পানি দ্বারা বেষ্টিত তাকে কী বলে?",
-    options: ["উপদ্বীপ", "প্রণালি", "যোজক", "দ্বীপ"],
+    id: "077",
+    question: "Which sentence uses a reflexive pronoun for emphasis?",
+    options: [
+      "Me completed the task.",
+      "I my completed the task.",
+      "Mine completed the task.",
+      "I myself completed the task."
+    ],
     answer: 3,
-    explanation: "যে ভূমিভাগ চারদিকে পানি দ্বারা বেষ্টিত থাকে তাকে দ্বীপ বলে। দ্বীপ মহাসাগর, সাগর, নদী বা হ্রদের মধ্যে থাকতে পারে।",
-    example: "বাংলাদেশের সেন্ট মার্টিন একটি দ্বীপ।"
+    explanation: "In this sentence, 'myself' is used as an emphatic pronoun to emphasize that the speaker personally completed the task.",
+    example: "I myself completed the entire project."
   },
   {
-    id: "GEO037",
-    question: "যে ভূমিভাগ তিন দিকে পানি দ্বারা বেষ্টিত তাকে কী বলে?",
-    options: ["উপদ্বীপ", "দ্বীপ", "প্রণালি", "উপসাগর"],
+    id: "078",
+    question: "In “The principal himself attended the meeting,” “himself” is used for ____.",
+    options: ["Emphasis", "Possession", "Question", "Comparison"],
     answer: 0,
-    explanation: "যে ভূমিভাগ তিন দিকে পানি দ্বারা বেষ্টিত এবং এক দিকে মূল ভূখণ্ডের সঙ্গে যুক্ত থাকে তাকে উপদ্বীপ বলে।",
-    example: "ভারতীয় উপদ্বীপ একটি উল্লেখযোগ্য উপদ্বীপ।"
+    explanation: "Himself is used for emphasis in this sentence. It stresses that the principal personally attended the meeting.",
+    example: "The principal himself welcomed the students."
   },
   {
-    id: "GEO038",
-    question: "দুটি বড় জলভাগকে সংযোগকারী সরু জলপথকে কী বলে?",
-    options: ["উপসাগর", "প্রণালি", "উপদ্বীপ", "দ্বীপ"],
+    id: "079",
+    question: "Which sentence is correct?",
+    options: [
+      "We our solved the problem.",
+      "We ourselves solved the problem.",
+      "Us ourselves solved the problem.",
+      "We ours solved the problem."
+    ],
     answer: 1,
-    explanation: "দুটি বৃহৎ জলভাগকে সংযুক্তকারী সরু জলপথকে প্রণালি বলে। এটি সাধারণত দুটি স্থলভাগের মাঝখানে অবস্থিত।",
-    example: "জিব্রাল্টার প্রণালি আটলান্টিক মহাসাগর ও ভূমধ্যসাগরকে সংযুক্ত করেছে।"
+    explanation: "We ourselves solved the problem is correct. 'Ourselves' emphasizes that we personally solved the problem.",
+    example: "We ourselves completed the assignment."
   },
   {
-    id: "GEO039",
-    question: "দুটি জলভাগকে আলাদা করে এমন সরু ভূমিভাগকে কী বলে?",
-    options: ["দ্বীপ", "উপদ্বীপ", "যোজক বা স্থলযোজক (Isthmus)", "প্রণালি"],
+    id: "080",
+    question: "Which sentence is correct?",
+    options: [
+      "Them themselves built the house.",
+      "They theirselves built the house.",
+      "They themselves built the house.",
+      "Their themselves built the house."
+    ],
     answer: 2,
-    explanation: "দুটি জলভাগকে পৃথক করে এবং দুটি বৃহত্তর স্থলভাগকে সংযুক্ত করে এমন সরু ভূমিভাগকে যোজক বা স্থলযোজক (Isthmus) বলে।",
-    example: "পানামা যোজক উত্তর ও দক্ষিণ আমেরিকাকে সংযুক্ত করেছে এবং আটলান্টিক ও প্রশান্ত মহাসাগরকে পৃথক করেছে।"
-  },
-  {
-    id: "GEO040",
-    question: "সমুদ্রের পানি থেকে স্থলভাগের দিকে প্রবেশ করা বড় জলভাগকে কী বলা হয়?",
-    options: ["প্রণালি", "দ্বীপ", "যোজক", "উপসাগর"],
-    answer: 3,
-    explanation: "সমুদ্রের পানি স্থলভাগের ভেতরে প্রবেশ করে যে বিস্তৃত জলভাগ তৈরি করে তাকে উপসাগর বলে। উপসাগর সাধারণত সমুদ্রের তুলনায় ছোট হয়।",
-    example: "বঙ্গোপসাগর ভারত মহাসাগরের উত্তর-পূর্ব অংশে অবস্থিত।"
+    explanation: "They themselves built the house is correct. 'Themselves' is the standard plural reflexive and emphatic form of 'they'.",
+    example: "They themselves built their new house."
   }
 ];
-
 
 
 
@@ -218,10 +244,9 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 let selectedMode = "";
-let timer;
+let timer = null;
 let timeLeft = 15;
 let answered = false;
-
 
 // ============================================================
 // DOM ELEMENTS
@@ -233,25 +258,18 @@ const resultScreen = document.getElementById("result-screen");
 
 const questionNumber = document.getElementById("question-number");
 const totalQuestions = document.getElementById("total-questions");
-
 const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
-
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
-
 const feedbackElement = document.getElementById("feedback");
 const correctMessage = document.getElementById("correct-message");
 const wrongMessage = document.getElementById("wrong-message");
 const exampleText = document.getElementById("example-text");
-
 const scoreElement = document.getElementById("score");
 const percentageElement = document.getElementById("percentage");
 const resultMessage = document.getElementById("result-message");
-
 const statusElement = document.getElementById("status");
-const socialMessage = document.querySelector(".social-message");
-
 
 // ============================================================
 // INITIAL SETUP
@@ -265,45 +283,16 @@ if (quizScreen) quizScreen.style.display = "none";
 if (resultScreen) resultScreen.style.display = "none";
 if (feedbackElement) feedbackElement.style.display = "none";
 
-
-// ============================================================
-// SHOW FEEDBACK — explanation এবং example আলাদাভাবে
-// ============================================================
-
-function showFeedbackContent(q) {
-    if (!exampleText) return;
-
-    // পুরোনো কনটেন্ট মুছে ফেলুন
-    exampleText.replaceChildren();
-
-    const explanationLabel = document.createElement("strong");
-    explanationLabel.textContent = "ব্যাখ্যা: ";
-
-    const explanationText = document.createTextNode(
-        q.explanation || "কোনো ব্যাখ্যা দেওয়া হয়নি।"
-    );
-
-    const exampleLabel = document.createElement("strong");
-    exampleLabel.textContent = "উদাহরণ: ";
-
-    const exampleValue = document.createTextNode(
-        q.example || "কোনো উদাহরণ দেওয়া হয়নি।"
-    );
-
-    exampleText.appendChild(explanationLabel);
-    exampleText.appendChild(explanationText);
-    exampleText.appendChild(document.createElement("br"));
-    exampleText.appendChild(document.createElement("br"));
-    exampleText.appendChild(exampleLabel);
-    exampleText.appendChild(exampleValue);
-}
-
-
 // ============================================================
 // START QUIZ
 // ============================================================
 
 function startQuiz(mode) {
+    if (mode !== "learning" && mode !== "exam") {
+        console.error("Invalid quiz mode:", mode);
+        return;
+    }
+
     selectedMode = mode;
     currentQuestion = 0;
     score = 0;
@@ -319,7 +308,6 @@ function startQuiz(mode) {
     playSound("start");
     showQuestion();
 }
-
 
 // ============================================================
 // SHOW QUESTION
@@ -354,10 +342,13 @@ function showQuestion() {
     }
 
     if (optionsElement) {
-        optionsElement.innerHTML = "";
+        optionsElement.replaceChildren();
     }
 
-    if (feedbackElement) feedbackElement.style.display = "none";
+    if (feedbackElement) {
+        feedbackElement.style.display = "none";
+    }
+
     if (correctMessage) correctMessage.textContent = "";
     if (wrongMessage) wrongMessage.textContent = "";
 
@@ -365,13 +356,12 @@ function showQuestion() {
         exampleText.replaceChildren();
     }
 
-    const oldButton = document.getElementById("next-question-btn");
-    if (oldButton) oldButton.remove();
+    const oldNextButton = document.getElementById("next-question-btn");
+    if (oldNextButton) oldNextButton.remove();
 
     q.options.forEach((option, index) => {
         const button = document.createElement("button");
-
-        button.className = "answer-option";
+        button.className = "option-btn";
         button.type = "button";
 
         const letter = document.createElement("span");
@@ -385,7 +375,7 @@ function showQuestion() {
         button.appendChild(letter);
         button.appendChild(optionText);
 
-        button.addEventListener("click", function () {
+        button.addEventListener("click", () => {
             selectAnswer(index, button);
         });
 
@@ -413,9 +403,39 @@ function showQuestion() {
     }
 }
 
+// ============================================================
+// SHOW EXPLANATION AND EXAMPLE
+// ============================================================
+
+function showFeedbackContent(q) {
+    if (!exampleText) return;
+
+    exampleText.replaceChildren();
+
+    const explanationHeading = document.createElement("strong");
+    explanationHeading.textContent = "Explanation: ";
+
+    const explanationParagraph = document.createElement("p");
+    explanationParagraph.appendChild(explanationHeading);
+    explanationParagraph.appendChild(
+        document.createTextNode(q.explanation || "Explanation not available.")
+    );
+
+    const exampleHeading = document.createElement("strong");
+    exampleHeading.textContent = "Example: ";
+
+    const exampleParagraph = document.createElement("p");
+    exampleParagraph.appendChild(exampleHeading);
+    exampleParagraph.appendChild(
+        document.createTextNode(q.example || "Example not available.")
+    );
+
+    exampleText.appendChild(explanationParagraph);
+    exampleText.appendChild(exampleParagraph);
+}
 
 // ============================================================
-// TIMER DISPLAY
+// UPDATE TIMER
 // ============================================================
 
 function updateTimer() {
@@ -430,7 +450,6 @@ function updateTimer() {
     }
 }
 
-
 // ============================================================
 // SELECT ANSWER
 // ============================================================
@@ -444,7 +463,7 @@ function selectAnswer(selectedIndex, clickedButton) {
     const q = quizData[currentQuestion];
 
     const buttons = optionsElement
-        ? optionsElement.querySelectorAll(".answer-option")
+        ? optionsElement.querySelectorAll(".option-btn")
         : [];
 
     buttons.forEach(button => {
@@ -461,11 +480,19 @@ function selectAnswer(selectedIndex, clickedButton) {
         playSound("correct");
 
         if (correctMessage) {
-            correctMessage.textContent = "✓ সঠিক উত্তর!";
+            correctMessage.textContent = "✓ Correct Answer!";
         }
 
         if (wrongMessage) {
             wrongMessage.textContent = "";
+        }
+
+        if (selectedMode === "learning") {
+            if (feedbackElement) {
+                feedbackElement.style.display = "block";
+            }
+
+            showFeedbackContent(q);
         }
     } else {
         if (clickedButton) {
@@ -479,21 +506,14 @@ function selectAnswer(selectedIndex, clickedButton) {
         playSound("wrong");
 
         if (wrongMessage) {
-            wrongMessage.textContent = "✗ ভুল উত্তর!";
+            wrongMessage.textContent = "✗ Wrong Answer!";
         }
 
         if (correctMessage) {
             correctMessage.textContent =
-                "সঠিক উত্তর: " + q.options[q.answer];
+                "Correct Answer: " + q.options[q.answer];
         }
-    }
 
-    // Learning Mode-এ সঠিক উত্তরেও ব্যাখ্যা দেখাবে।
-    // Exam Mode-এ উত্তর দেওয়ার পর ব্যাখ্যা দেখাবে।
-    if (
-        selectedMode === "learning" ||
-        selectedMode === "exam"
-    ) {
         if (feedbackElement) {
             feedbackElement.style.display = "block";
         }
@@ -503,7 +523,6 @@ function selectAnswer(selectedIndex, clickedButton) {
 
     showNextButton();
 }
-
 
 // ============================================================
 // TIME UP
@@ -518,7 +537,7 @@ function timeUp() {
     const q = quizData[currentQuestion];
 
     const buttons = optionsElement
-        ? optionsElement.querySelectorAll(".answer-option")
+        ? optionsElement.querySelectorAll(".option-btn")
         : [];
 
     buttons.forEach(button => {
@@ -532,12 +551,12 @@ function timeUp() {
     playSound("tryAgain");
 
     if (wrongMessage) {
-        wrongMessage.textContent = "⏰ সময় শেষ!";
+        wrongMessage.textContent = "⏰ Time's Up!";
     }
 
     if (correctMessage) {
         correctMessage.textContent =
-            "সঠিক উত্তর: " + q.options[q.answer];
+            "Correct Answer: " + q.options[q.answer];
     }
 
     if (feedbackElement) {
@@ -548,35 +567,37 @@ function timeUp() {
     showNextButton();
 }
 
-
 // ============================================================
-// NEXT QUESTION BUTTON
+// NEXT BUTTON
 // ============================================================
 
 function showNextButton() {
     const oldButton = document.getElementById("next-question-btn");
-
     if (oldButton) oldButton.remove();
 
     const nextButton = document.createElement("button");
-
     nextButton.id = "next-question-btn";
-    nextButton.className = "next-question-btn";
+    nextButton.className = "next-btn";
     nextButton.type = "button";
 
     if (currentQuestion < quizData.length - 1) {
-        nextButton.textContent = "পরবর্তী প্রশ্ন →";
+        nextButton.textContent = "Next Question →";
         nextButton.addEventListener("click", nextQuestion);
     } else {
-        nextButton.textContent = "ফলাফল দেখো 🎉";
+        nextButton.textContent = "Show Result 🎉";
         nextButton.addEventListener("click", showResult);
     }
 
-    if (quizScreen) {
+    const quizContainer = quizScreen
+        ? quizScreen.querySelector(".quiz-container")
+        : null;
+
+    if (quizContainer) {
+        quizContainer.appendChild(nextButton);
+    } else if (quizScreen) {
         quizScreen.appendChild(nextButton);
     }
 }
-
 
 // ============================================================
 // NEXT QUESTION
@@ -592,7 +613,6 @@ function nextQuestion() {
         showResult();
     }
 }
-
 
 // ============================================================
 // SHOW RESULT
@@ -620,51 +640,72 @@ function showResult() {
     if (resultMessage) {
         if (percentage >= 90) {
             resultMessage.textContent =
-                "🏆 অসাধারণ! তোমার প্রস্তুতি খুবই ভালো।";
+                "🏆 Excellent! Outstanding performance!";
             playSound("victory");
         } else if (percentage >= 75) {
             resultMessage.textContent =
-                "🌟 খুব ভালো! আরও একটু অনুশীলন করলে আরও ভালো করবে।";
+                "🌟 Very Good! Keep improving your Grammar.";
             playSound("success");
         } else if (percentage >= 50) {
             resultMessage.textContent =
-                "👍 ভালো চেষ্টা! নিয়মিত অনুশীলন চালিয়ে যাও।";
+                "👍 Good Try! Keep practicing regularly.";
             playSound("complete");
         } else {
             resultMessage.textContent =
-                "📚 আরও অনুশীলন করতে হবে। পরবর্তী কুইজে আরও ভালো করবে।";
+                "📚 Keep Learning! Try Again and improve your score.";
             playSound("tryAgain");
         }
     }
 
-    if (socialMessage) {
-        socialMessage.style.display = "block";
-    }
-}
+    let socialBox = document.getElementById("social-message");
 
+    if (!socialBox && resultScreen) {
+        const resultCard = resultScreen.querySelector(".result-card");
+
+        if (resultCard) {
+            socialBox = document.createElement("div");
+            socialBox.id = "social-message";
+            socialBox.className = "social-message";
+            resultCard.appendChild(socialBox);
+        }
+    }
+
+    if (socialBox) {
+        socialBox.textContent =
+            "❤️ Did you enjoy the quiz? Like our Facebook post, " +
+            "comment your score, share the quiz with your friends, " +
+            "and follow our page for more English Grammar quizzes.";
+
+        socialBox.style.display = "block";
+    }
+
+    setupFacebookButton();
+}
 
 // ============================================================
 // RETURN TO FACEBOOK
 // ============================================================
 
 function returnToFacebook() {
-    if (
-        FACEBOOK_POST_URL &&
-        FACEBOOK_POST_URL !== "PASTE_YOUR_FACEBOOK_POST_URL_HERE"
-    ) {
-        window.location.href = FACEBOOK_POST_URL;
-    } else {
-        alert(
-            "Facebook post link এখনো যোগ করা হয়নি।\n\n" +
-            "script.js-এর FACEBOOK_POST_URL-এ " +
-            "আপনার Facebook post link বসান।"
-        );
+    if (!FACEBOOK_POST_URL) {
+        alert("Facebook post link is not available.");
+        return;
     }
+
+    window.location.assign(FACEBOOK_POST_URL);
 }
 
+function setupFacebookButton() {
+    const facebookButton = document.getElementById("facebook-btn");
+    if (!facebookButton) return;
+
+    facebookButton.onclick = function () {
+        returnToFacebook();
+    };
+}
 
 // ============================================================
-// PLAY AGAIN
+// RELOAD QUIZ
 // ============================================================
 
 function reloadQuiz() {
@@ -680,69 +721,101 @@ function reloadQuiz() {
     if (startScreen) startScreen.style.display = "block";
 
     if (statusElement) statusElement.textContent = "";
-    if (socialMessage) socialMessage.style.display = "none";
-
-    const nextButton = document.getElementById("next-question-btn");
-    if (nextButton) nextButton.remove();
-
-    if (progressBar) progressBar.style.width = "0%";
 
     if (timerElement) {
         timerElement.textContent = "15";
         timerElement.classList.remove("timer-danger");
     }
 
-    if (feedbackElement) feedbackElement.style.display = "none";
+    if (progressBar) {
+        progressBar.style.width = "0%";
+    }
+
+    if (questionNumber) {
+        questionNumber.textContent = "1";
+    }
+
+    if (totalQuestions) {
+        totalQuestions.textContent = quizData.length;
+    }
+
+    if (optionsElement) {
+        optionsElement.replaceChildren();
+    }
+
+    if (feedbackElement) {
+        feedbackElement.style.display = "none";
+    }
+
     if (correctMessage) correctMessage.textContent = "";
     if (wrongMessage) wrongMessage.textContent = "";
-    if (exampleText) exampleText.replaceChildren();
+
+    if (exampleText) {
+        exampleText.replaceChildren();
+    }
+
+    const nextButton = document.getElementById("next-question-btn");
+    if (nextButton) nextButton.remove();
+
+    const socialBox = document.getElementById("social-message");
+    if (socialBox) socialBox.style.display = "none";
 
     playSound("start");
 }
 
+// ============================================================
+// INITIALIZE FACEBOOK BUTTON
+// ============================================================
+
+setupFacebookButton();
 
 // ============================================================
-// ANSWER DISTRIBUTION AND DATA VALIDATION
+// QUIZ DATA VALIDATION + ANSWER DISTRIBUTION
 // ============================================================
 
-(function checkAnswerDistribution() {
+(function checkQuizData() {
     const distribution = [0, 0, 0, 0];
-    const questionIds = new Set();
-    let hasErrors = false;
+    const seenIds = new Set();
+    const errors = [];
 
-    quizData.forEach(q => {
-        if (questionIds.has(q.id)) {
-            console.error("Duplicate question ID:", q.id);
-            hasErrors = true;
+    quizData.forEach((q, index) => {
+        const label = `Question ${index + 1} (ID: ${q.id})`;
+
+        if (seenIds.has(q.id)) {
+            errors.push(`${label}: Duplicate question ID.`);
         }
-        questionIds.add(q.id);
+        seenIds.add(q.id);
+
+        if (typeof q.question !== "string" || !q.question.trim()) {
+            errors.push(`${label}: Missing question text.`);
+        }
 
         if (!Array.isArray(q.options) || q.options.length !== 4) {
-            console.error(
-                "Question must have exactly four options:",
-                q.id
-            );
-            hasErrors = true;
-            return;
+            errors.push(`${label}: Exactly four options are required.`);
+        } else if (q.options.some(option =>
+            typeof option !== "string" || !option.trim()
+        )) {
+            errors.push(`${label}: One or more options are empty.`);
         }
 
         if (
             !Number.isInteger(q.answer) ||
             q.answer < 0 ||
-            q.answer >= q.options.length
+            q.answer > 3 ||
+            !Array.isArray(q.options) ||
+            !q.options[q.answer]
         ) {
-            console.error("Invalid answer index:", q.id);
-            hasErrors = true;
+            errors.push(`${label}: Invalid answer index.`);
         } else {
             distribution[q.answer]++;
         }
 
-        if (!q.explanation || !q.example) {
-            console.error(
-                "Missing explanation or example:",
-                q.id
-            );
-            hasErrors = true;
+        if (typeof q.explanation !== "string" || !q.explanation.trim()) {
+            errors.push(`${label}: Missing explanation.`);
+        }
+
+        if (typeof q.example !== "string" || !q.example.trim()) {
+            errors.push(`${label}: Missing example.`);
         }
     });
 
@@ -754,15 +827,13 @@ function reloadQuiz() {
         `D=${distribution[3]}`
     );
 
-    console.log("Total Questions:", quizData.length);
-
-    if (distribution.some(count => count < 3)) {
-        console.warn(
-            "Warning: One or more answer positions have fewer than 3 correct answers."
-        );
+    if (quizData.length !== 20) {
+        errors.push(`Expected 20 questions, found ${quizData.length}.`);
     }
 
-    if (!hasErrors) {
-        console.log("Quiz data validation completed without detected errors.");
+    if (errors.length > 0) {
+        console.error("Quiz data validation errors:", errors);
+    } else {
+        console.log("Quiz data validation passed.");
     }
 })();
