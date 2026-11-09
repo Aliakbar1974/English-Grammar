@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo?fbid=122124982593435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122125299657435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
