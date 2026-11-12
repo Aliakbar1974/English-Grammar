@@ -1,208 +1,310 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>সাধারন জ্ঞান- ভূগোল MCQ Challenge 03</title>
+    <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        English Grammer MCQ Challenge 25
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
-<main>
 
-  <!-- =========================
-       START SCREEN
-       ========================= -->
+    <!-- =====================================================
+         START SCREEN
+         ===================================================== -->
 
-  <section id="start-screen" class="start-screen">
+    <main id="start-screen">
 
-    <div class="top-badge">
-      MCQ
-    </div>
-
-    <h1>ভূগোল</h1>
-
-    <h2>
-      MCQ Challenge <span>03</span>
-    </h2>
-
-    <div class="info-box">
-
-      <div>
-        <strong>20টি প্রশ্ন</strong>
-      </div>
-
-      <div>
-        <strong>Learning / Exam Mode</strong>
-      </div>
-
-      <div>
-        <strong>15 Seconds per Question</strong>
-      </div>
-
-    </div>
-
-    <p class="instruction">
-      একটি মোড নির্বাচন করে শুরু করো
-    </p>
-
-    <div class="mode-buttons">
-
-      <button
-        id="learningBtn"
-        class="mode-btn learning"
-        onclick="startQuiz('learning')">
-        📖 LEARNING MODE
-      </button>
-
-      <button
-        id="examBtn"
-        class="mode-btn exam"
-        onclick="startQuiz('exam')">
-        ⏱ EXAM MODE
-      </button>
-
-    </div>
-
-    <p id="status" class="status"></p>
-
-  </section>
-
-
-  <!-- =========================
-       QUIZ SCREEN
-       ========================= -->
-
-  <section id="quiz-screen" class="quiz-screen">
-
-    <div class="quiz-container">
-
-      <div class="quiz-top">
-
-        <div class="question-counter">
-          Question
-          <span id="question-number">1</span>
-          /
-          <span id="total-questions">23</span>
+        <div class="top-badge">
+            MCQ
         </div>
 
-        <div class="timer-box">
-          ⏱
-          <span id="timer">15</span>
+
+        <h1>
+            English Grammer
+        </h1>
+
+
+        <h2>
+            MCQ Challenge <span>25</span>
+        </h2>
+
+
+        <div class="info-box">
+
+            <div>
+                <strong>
+                    20 Questions
+                </strong>
+            </div>
+
+            <div>
+                <strong>
+                    Learning / Exam Mode
+                </strong>
+            </div>
+
+            <div>
+                <strong>
+                    15 Seconds per Question
+                </strong>
+            </div>
+
         </div>
 
-      </div>
+
+        <p class="instruction">
+            Select a mode to start the quiz
+        </p>
 
 
-      <!-- Progress Bar -->
+        <div class="mode-buttons">
 
-      <div class="progress">
-        <div id="progress-bar"></div>
-      </div>
-
-
-      <!-- Question -->
-
-      <div id="question" class="question"></div>
-
-
-      <!-- Options -->
-
-      <div id="options"></div>
+            <button
+                id="learningBtn"
+                class="learning-mode-btn"
+                type="button"
+                onclick="startQuiz('learning')"
+            >
+                📖 LEARNING MODE
+            </button>
 
 
-      <!-- Feedback -->
+            <button
+                id="examBtn"
+                class="exam-mode-btn"
+                type="button"
+                onclick="startQuiz('exam')"
+            >
+                ⏱ EXAM MODE
+            </button>
 
-      <div id="feedback">
-
-        <div id="correct-message"></div>
-
-        <div id="wrong-message"></div>
-
-        <div id="example-text"></div>
-
-      </div>
-
-    </div>
-
-  </section>
+        </div>
 
 
-  <!-- =========================
-       RESULT SCREEN
-       ========================= -->
+        <p
+            id="status"
+            class="status"
+        ></p>
 
-  <section id="result-screen" class="result-screen">
-
-    <div class="result-card">
-
-      <h1>🎉 Quiz Completed!</h1>
-
-      <div id="score"></div>
-
-      <div id="percentage"></div>
-
-      <p id="result-message"></p>
+    </main>
 
 
-      <div class="social-message">
 
-        ❤️ <strong>Did you enjoy the quiz?</strong>
+    <!-- =====================================================
+         QUIZ SCREEN
+         ===================================================== -->
 
-        <br><br>
+    <section id="quiz-screen">
 
-        👍 Like our Facebook Post<br>
-
-        💬 Comment your score<br>
-
-        🔄 Share the quiz with your friends<br>
-
-        ❤️ Follow our page for more quizzes!
-
-      </div>
+        <div class="quiz-container">
 
 
-      <button
-        onclick="returnToFacebook()"
-        class="facebook-btn">
-        🔵 RETURN TO FACEBOOK
-      </button>
+            <!-- QUIZ TOP -->
+
+            <div class="quiz-top">
+
+                <div class="question-counter">
+
+                    Question:
+                    <span id="question-number">
+                        1
+                    </span>
+
+                    /
+
+                    <span id="total-questions">
+                        20
+                    </span>
+
+                </div>
 
 
-      <button
-        onclick="reloadQuiz()"
-        class="play-again-btn">
-        🔄 PLAY AGAIN
-      </button>
+                <div
+                    class="timer-box"
+                    id="timer"
+                >
+                    15
+                </div>
 
-    </div>
-
-  </section>
-
-</main>
+            </div>
 
 
-<script src="script.js"></script>
+
+            <!-- PROGRESS BAR -->
+
+            <div class="progress">
+
+                <div
+                    id="progress-bar"
+                ></div>
+
+            </div>
 
 
-<!-- AUTO-GO-HOME: managed by .github/workflows/ensure-go-home.yml -->
-<style>
-#auto-go-home-button {
-  position: fixed; right: 14px; bottom: 14px; z-index: 99999;
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: 10px 15px; border: 2px solid #ffffff; border-radius: 999px;
-  background: #123f70; color: #ffffff; font: 700 14px/1.2 Arial, sans-serif;
-  text-decoration: none; box-shadow: 0 3px 12px rgba(0,0,0,.28);
-}
-#auto-go-home-button:hover { background: #0b2c50; }
-@media (max-width: 480px) {
-  #auto-go-home-button { right: 9px; bottom: 9px; padding: 9px 12px; font-size: 12px; }
-}
-</style>
-<a id="auto-go-home-button" href="https://quizchallengebd.com/" aria-label="Go to Quiz Challenge Bangladesh home page">🏠 GO HOME</a>
+
+            <!-- QUESTION -->
+
+            <div id="question"></div>
+
+
+
+            <!-- OPTIONS -->
+
+            <div id="options"></div>
+
+
+
+            <!-- FEEDBACK -->
+
+            <div id="feedback">
+
+                <div
+                    id="correct-message"
+                ></div>
+
+
+                <div
+                    id="wrong-message"
+                ></div>
+
+
+                <div
+                    id="example-text"
+                ></div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESULT SCREEN
+         ===================================================== -->
+
+    <section id="result-screen">
+
+
+        <div class="result-card">
+
+
+            <h1>
+                🎉 Quiz Completed!
+            </h1>
+
+
+            <!-- SCORE -->
+
+            <div id="score">
+                0 / 20
+            </div>
+
+
+            <!-- PERCENTAGE -->
+
+            <div id="percentage">
+                0%
+            </div>
+
+
+            <!-- RESULT MESSAGE -->
+
+            <div id="result-message"></div>
+
+
+
+            <!-- =================================================
+                 SOCIAL MESSAGE
+                 ================================================= -->
+
+            <div
+                id="social-message"
+                class="social-message"
+            >
+
+                ❤️
+                <strong>
+                    Did you enjoy the quiz?
+                </strong>
+
+                <br><br>
+
+                👍 Like our Facebook Post
+
+                <br>
+
+                💬 Comment your score
+
+                <br>
+
+                🔄 Share the quiz with your friends
+
+                <br>
+
+                ❤️ Follow our page for more quizzes!
+
+            </div>
+
+
+
+            <!-- RETURN TO FACEBOOK -->
+
+            <button
+                id="facebook-btn"
+                class="facebook-btn"
+                type="button"
+                onclick="returnToFacebook()"
+            >
+                🔵 RETURN TO FACEBOOK
+            </button>
+
+
+
+            <!-- PLAY AGAIN -->
+
+            <button
+                id="play-again-btn"
+                class="play-again-btn"
+                type="button"
+                onclick="reloadQuiz()"
+            >
+                🔄 PLAY AGAIN
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
 
 </body>
+
 </html>

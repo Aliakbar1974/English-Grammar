@@ -1,13 +1,16 @@
 
- // ============================================================
- // GENERAL KNOWLEDGE Junior — MCQ BANK PART 03
- // Topic: Geography | 20 Questions
- // Learning Mode + Exam Mode | 15 Seconds per Question
- // Sound Engine + Facebook Return + Result Screen
- // ============================================================
+"use strict";
 
-const FACEBOOK_POST_URL = "https://www.facebook.com/photo/?fbid=122125452723435742&set=a.122102731923435742";
+// ============================================================
+// ENGLISH GRAMMAR QUIZ 25
+// Topic: demonstrative pronoun
+// 20 Questions | Learning Mode + Exam Mode
+// 15 Seconds per Question
+// ============================================================
 
+// Facebook post URL
+const FACEBOOK_POST_URL =
+    "https://www.facebook.com/photo/?fbid=122125299657435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -34,178 +37,180 @@ function playSound(soundName) {
     });
 }
 
-
 // ============================================================
 // QUIZ DATA
-// explanation এবং example আলাদা রাখা হয়েছে
-// answer index: 0=A, 1=B, 2=C, 3=D
+// answer: 0 = A, 1 = B, 2 = C, 3 = D
 // ============================================================
+
 
 
 
 const quizData = [
+ 
 
   {
-    id: "GEO041",
-    question: "মিসর কোন মহাদেশে অবস্থিত?",
-    options: ["এশিয়া", "ইউরোপ", "আফ্রিকা", "দক্ষিণ আমেরিকা"],
-    answer: 2,
-    explanation: "মিসর প্রধানত আফ্রিকা মহাদেশের উত্তর-পূর্ব অংশে অবস্থিত। দেশটির সিনাই উপদ্বীপের একটি অংশ এশিয়া মহাদেশে পড়েছে।",
-    example: "কায়রো আফ্রিকা মহাদেশে অবস্থিত মিসরের রাজধানী।"
-  },
-  {
-    id: "GEO042",
-    question: "জাপান কোন মহাদেশে অবস্থিত?",
-    options: ["এশিয়া", "ইউরোপ", "আফ্রিকা", "অস্ট্রেলিয়া"],
-    answer: 0,
-    explanation: "জাপান পূর্ব এশিয়ায় অবস্থিত একটি দ্বীপরাষ্ট্র। এটি প্রশান্ত মহাসাগরের পশ্চিমাংশে অবস্থিত।",
-    example: "টোকিও জাপানের রাজধানী এবং এশিয়ার অন্যতম গুরুত্বপূর্ণ মহানগর।"
-  },
-  {
-    id: "GEO043",
-    question: "ব্রাজিল কোন মহাদেশে অবস্থিত?",
-    options: ["উত্তর আমেরিকা", "আফ্রিকা", "এশিয়া", "দক্ষিণ আমেরিকা"],
-    answer: 3,
-    explanation: "ব্রাজিল দক্ষিণ আমেরিকা মহাদেশের বৃহত্তম দেশ। আয়তনের দিক থেকে এটি পৃথিবীর পঞ্চম বৃহত্তম দেশ।",
-    example: "আমাজন বনভূমির একটি বিশাল অংশ ব্রাজিলে অবস্থিত।"
-  },
-  {
-    id: "GEO044",
-    question: "কানাডা কোন মহাদেশে অবস্থিত?",
-    options: ["ইউরোপ", "উত্তর আমেরিকা", "দক্ষিণ আমেরিকা", "এশিয়া"],
+    id: 81,
+    question: "Which is a demonstrative pronoun?",
+    options: ["Who", "This", "He", "Someone"],
     answer: 1,
-    explanation: "কানাডা উত্তর আমেরিকা মহাদেশের উত্তরাংশে অবস্থিত। আয়তনের দিক থেকে এটি পৃথিবীর দ্বিতীয় বৃহত্তম দেশ।",
-    example: "অটোয়া কানাডার রাজধানী।"
+    explanation: "'This' is a demonstrative pronoun because it points to a specific person or thing.",
+    example: "This is my favourite book."
   },
   {
-    id: "GEO045",
-    question: "অস্ট্রেলিয়া কোন মহাদেশের সঙ্গে একই নাম বহন করে?",
-    options: ["এশিয়া", "আফ্রিকা", "অস্ট্রেলিয়া", "ইউরোপ"],
-    answer: 2,
-    explanation: "অস্ট্রেলিয়া একটি দেশ এবং একই সঙ্গে একটি মহাদেশের নাম। দেশটি অস্ট্রেলিয়া মহাদেশের প্রধান ভূখণ্ডজুড়ে অবস্থিত।",
-    example: "অস্ট্রেলিয়ার রাজধানী ক্যানবেরা।"
-  },
-  {
-    id: "GEO046",
-    question: "ফ্রান্সের রাজধানী কী?",
-    options: ["লন্ডন", "রোম", "বার্লিন", "প্যারিস"],
-    answer: 3,
-    explanation: "প্যারিস ফ্রান্সের রাজধানী। এটি দেশটির বৃহত্তম শহর এবং বিশ্ববিখ্যাত সাংস্কৃতিক ও পর্যটনকেন্দ্র।",
-    example: "আইফেল টাওয়ার প্যারিস শহরে অবস্থিত।"
-  },
-  {
-    id: "GEO047",
-    question: "যুক্তরাজ্যের রাজধানী কী?",
-    options: ["লন্ডন", "এডিনবরা", "কার্ডিফ", "বেলফাস্ট"],
+    id: 82,
+    question: "Which demonstrative pronoun is generally used for a singular thing near the speaker?",
+    options: ["This", "Those", "That", "These"],
     answer: 0,
-    explanation: "লন্ডন যুক্তরাজ্যের রাজধানী। এটি ইংল্যান্ডের রাজধানীও এবং বিশ্বের অন্যতম গুরুত্বপূর্ণ অর্থনৈতিক ও সাংস্কৃতিক শহর।",
-    example: "বিগ বেন ও বাকিংহাম প্যালেস লন্ডনের বিখ্যাত স্থাপনা।"
+    explanation: "'This' is used to refer to one person or thing that is near the speaker.",
+    example: "This is my pen."
   },
   {
-    id: "GEO048",
-    question: "যুক্তরাষ্ট্রের রাজধানী কী?",
-    options: ["নিউইয়র্ক", "ওয়াশিংটন ডিসি", "লস অ্যাঞ্জেলেস", "শিকাগো"],
-    answer: 1,
-    explanation: "ওয়াশিংটন ডিসি যুক্তরাষ্ট্রের রাজধানী। এটি দেশটির ফেডারেল সরকারের প্রধান কার্যালয়গুলোর অবস্থানস্থল।",
-    example: "হোয়াইট হাউস ওয়াশিংটন ডিসিতে অবস্থিত।"
-  },
-  {
-    id: "GEO049",
-    question: "জাপানের রাজধানী কী?",
-    options: ["ওসাকা", "কিয়োটো", "টোকিও", "হিরোশিমা"],
+    id: 83,
+    question: "Which demonstrative pronoun is generally used for a singular thing farther away?",
+    options: ["These", "Those", "That", "This"],
     answer: 2,
-    explanation: "টোকিও জাপানের রাজধানী। এটি বিশ্বের অন্যতম বৃহৎ ও জনবহুল মহানগর এলাকা।",
-    example: "টোকিওতে জাপানের জাতীয় সংসদ ভবন অবস্থিত।"
+    explanation: "'That' is used to point to one person or thing that is farther away.",
+    example: "That is my school."
   },
   {
-    id: "GEO050",
-    question: "অস্ট্রেলিয়ার রাজধানী কী?",
-    options: ["সিডনি", "মেলবোর্ন", "পার্থ", "ক্যানবেরা"],
+    id: 84,
+    question: "Which demonstrative pronoun is generally used for plural things near the speaker?",
+    options: ["That", "This", "Those", "These"],
     answer: 3,
-    explanation: "ক্যানবেরা অস্ট্রেলিয়ার রাজধানী। এটি সিডনি ও মেলবোর্নের মাঝামাঝি অঞ্চলে অবস্থিত একটি পরিকল্পিত শহর।",
-    example: "অস্ট্রেলিয়ার পার্লামেন্ট হাউস ক্যানবেরায় অবস্থিত।"
+    explanation: "'These' refers to more than one person or thing near the speaker.",
+    example: "These are my books."
   },
   {
-    id: "GEO051",
-    question: "ভারতের রাজধানী কী?",
-    options: ["নয়াদিল্লি", "মুম্বাই", "কলকাতা", "চেন্নাই"],
+    id: 85,
+    question: "Which demonstrative pronoun is generally used for plural things farther away?",
+    options: ["Those", "These", "That", "This"],
     answer: 0,
-    explanation: "নয়াদিল্লি ভারতের রাজধানী। এটি দিল্লির জাতীয় রাজধানী অঞ্চলের অন্তর্ভুক্ত।",
-    example: "ভারতের রাষ্ট্রপতি ভবন নয়াদিল্লিতে অবস্থিত।"
+    explanation: "'Those' is used to refer to multiple people or things that are farther away.",
+    example: "Those are beautiful flowers."
   },
   {
-    id: "GEO052",
-    question: "চীনের রাজধানী কী?",
-    options: ["সাংহাই", "বেইজিং", "গুয়াংজু", "শেনজেন"],
+    id: 86,
+    question: "“This is my book.” The word “This” is a ____.",
+    options: ["Personal pronoun", "Relative pronoun", "Reflexive pronoun", "Demonstrative pronoun"],
+    answer: 3,
+    explanation: "'This' stands alone and replaces the name of a thing, so it functions as a demonstrative pronoun.",
+    example: "This is my book, and that is yours."
+  },
+  {
+    id: 87,
+    question: "“Those are beautiful.” The word “Those” is a ____.",
+    options: ["Demonstrative pronoun", "Personal pronoun", "Possessive pronoun", "Interrogative pronoun"],
+    answer: 0,
+    explanation: "'Those' points to specific people or things and is used independently as a demonstrative pronoun.",
+    example: "Those are my favourite flowers."
+  },
+  {
+    id: 88,
+    question: "Which sentence uses “this” as a pronoun?",
+    options: ["This book is new.", "This is new.", "This red book is new.", "This interesting book is new."],
     answer: 1,
-    explanation: "বেইজিং চীনের রাজধানী। এটি দেশটির রাজনৈতিক, প্রশাসনিক ও সাংস্কৃতিক কেন্দ্রগুলোর অন্যতম।",
-    example: "চীনের বিখ্যাত নিষিদ্ধ নগরী বেইজিংয়ে অবস্থিত।"
+    explanation: "In 'This is new', the word 'This' stands alone and replaces a noun. In the other sentences, it modifies a noun and acts as a demonstrative determiner.",
+    example: "This is my new phone."
   },
   {
-    id: "GEO053",
-    question: "ব্রাজিলের রাজধানী কী?",
-    options: ["রিও ডি জেনেইরো", "সাও পাওলো", "ব্রাসিলিয়া", "সালভাদর"],
+    id: 89,
+    question: "Which sentence uses “these” as a pronoun?",
+    options: ["These books are new.", "These old books are new.", "These two books are new.", "These are new."],
+    answer: 3,
+    explanation: "In 'These are new', the word 'These' stands alone and replaces a plural noun. In the other sentences, it modifies the noun 'books'.",
+    example: "These are my favourite shoes."
+  },
+  {
+    id: 90,
+    question: "Which sentence uses “that” as a pronoun?",
+    options: ["That house is large.", "That large house is mine.", "That is my house.", "That old house is mine."],
     answer: 2,
-    explanation: "ব্রাসিলিয়া ব্রাজিলের রাজধানী। পরিকল্পিত এই শহরটি ১৯৬০ সালে দেশটির রাজধানী হিসেবে প্রতিষ্ঠিত হয়।",
-    example: "ব্রাসিলিয়া শহরটি আধুনিক স্থাপত্যের জন্য পরিচিত।"
+    explanation: "In 'That is my house', the word 'That' stands alone and functions as a demonstrative pronoun.",
+    example: "That is the school I attended."
   },
   {
-    id: "GEO054",
-    question: "মিসরের রাজধানী কী?",
-    options: ["আলেকজান্দ্রিয়া", "লুক্সর", "গিজা", "কায়রো"],
-    answer: 3,
-    explanation: "কায়রো মিসরের রাজধানী এবং দেশটির বৃহত্তম শহর। এটি আফ্রিকার অন্যতম জনবহুল মহানগর।",
-    example: "গিজার বিখ্যাত পিরামিড কায়রোর কাছাকাছি অবস্থিত।"
-  },
-  {
-    id: "GEO055",
-    question: "কোন দেশকে তার আকৃতির কারণে “Boot-shaped country” বলা হয়?",
-    options: ["ইতালি", "ফ্রান্স", "স্পেন", "গ্রিস"],
+    id: 91,
+    question: "Which sentence uses “those” as a pronoun?",
+    options: ["Those are my books.", "Those boys are playing.", "Those old books are mine.", "Those two boys are students."],
     answer: 0,
-    explanation: "ইতালির মানচিত্রের আকৃতি অনেকটা বুট বা জুতার মতো। এ কারণে ইতালিকে Boot-shaped country বলা হয়।",
-    example: "ইতালির দক্ষিণ-পূর্ব দিকে প্রসারিত অংশটি বুটের অগ্রভাগের মতো দেখায়।"
+    explanation: "In 'Those are my books', the word 'Those' stands alone and replaces a plural noun.",
+    example: "Those are my classmates."
   },
   {
-    id: "GEO056",
-    question: "কোন দেশের জাতীয় পতাকায় ম্যাপল পাতার প্রতীক রয়েছে?",
-    options: ["যুক্তরাষ্ট্র", "কানাডা", "যুক্তরাজ্য", "অস্ট্রেলিয়া"],
+    id: 92,
+    question: "“____ is my pen.”",
+    options: ["Those", "These", "Them", "This"],
+    answer: 3,
+    explanation: "'This' is used for one thing near the speaker. The singular verb 'is' agrees with it.",
+    example: "This is my favourite pen."
+  },
+  {
+    id: 93,
+    question: "“____ are my shoes.”",
+    options: ["It", "These", "This", "That"],
     answer: 1,
-    explanation: "কানাডার জাতীয় পতাকার মাঝখানে লাল রঙের ১১-কোণবিশিষ্ট ম্যাপল পাতার প্রতীক রয়েছে। এটি কানাডার জাতীয় পরিচয়ের গুরুত্বপূর্ণ প্রতীক।",
-    example: "কানাডার জাতীয় পতাকায় সাদা পটভূমির দুই পাশে লাল রঙের দুটি উল্লম্ব অংশ রয়েছে।"
+    explanation: "'These' refers to plural things near the speaker and takes the plural verb 'are'.",
+    example: "These are my new shoes."
   },
   {
-    id: "GEO057",
-    question: "গ্রেট ওয়াল কোন দেশে অবস্থিত?",
-    options: ["জাপান", "ভারত", "চীন", "মঙ্গোলিয়া"],
+    id: 94,
+    question: "“____ is your house over there.”",
+    options: ["These", "Those", "That", "This"],
     answer: 2,
-    explanation: "গ্রেট ওয়াল বা চীনের মহাপ্রাচীর চীনে অবস্থিত। এটি বিভিন্ন ঐতিহাসিক সময়ে নির্মিত ও সম্প্রসারিত প্রতিরক্ষা প্রাচীরের সমষ্টি।",
-    example: "চীনের মহাপ্রাচীর ইউনেস্কোর বিশ্ব ঐতিহ্যবাহী স্থানের অন্তর্ভুক্ত।"
+    explanation: "'That' is used for one thing situated farther away from the speaker.",
+    example: "That is your house over there."
   },
   {
-    id: "GEO058",
-    question: "আইফেল টাওয়ার কোন দেশে অবস্থিত?",
-    options: ["ইতালি", "জার্মানি", "স্পেন", "ফ্রান্স"],
-    answer: 3,
-    explanation: "আইফেল টাওয়ার ফ্রান্সের রাজধানী প্যারিসে অবস্থিত। এটি ১৮৮৯ সালে নির্মিত হয় এবং ফ্রান্সের অন্যতম পরিচিত স্থাপনা।",
-    example: "প্রকৌশলী গুস্তাভ আইফেলের প্রতিষ্ঠানের তত্ত্বাবধানে আইফেল টাওয়ার নির্মিত হয়েছিল।"
-  },
-  {
-    id: "GEO059",
-    question: "স্ট্যাচু অব লিবার্টি কোন দেশে অবস্থিত?",
-    options: ["যুক্তরাষ্ট্র", "কানাডা", "যুক্তরাজ্য", "ফ্রান্স"],
+    id: 95,
+    question: "“____ are the books on that shelf.”",
+    options: ["Those", "This", "That", "These"],
     answer: 0,
-    explanation: "স্ট্যাচু অব লিবার্টি যুক্তরাষ্ট্রের নিউইয়র্ক হারবারে লিবার্টি আইল্যান্ডে অবস্থিত। এটি স্বাধীনতা ও গণতন্ত্রের প্রতীক হিসেবে পরিচিত।",
-    example: "ফ্রান্স যুক্তরাষ্ট্রকে বন্ধুত্বের নিদর্শন হিসেবে এই ভাস্কর্য উপহার দিয়েছিল।"
+    explanation: "'Those' refers to multiple things located at a distance from the speaker.",
+    example: "Those are the books I need."
   },
   {
-    id: "GEO060",
-    question: "পিরামিড অব গিজা কোন দেশে অবস্থিত?",
-    options: ["মেক্সিকো", "মিসর", "সুদান", "ইরাক"],
+    id: 96,
+    question: "Which demonstrative pronoun is singular?",
+    options: ["Those", "These", "Both A and B", "This"],
+    answer: 3,
+    explanation: "'This' is singular and refers to one person or thing near the speaker. 'That' is also singular, but it is not among the other choices here.",
+    example: "This is my classroom."
+  },
+  {
+    id: 97,
+    question: "Which demonstrative pronoun is plural?",
+    options: ["It", "That", "These", "This"],
+    answer: 2,
+    explanation: "'These' is a plural demonstrative pronoun used for things near the speaker. 'Those' is also plural.",
+    example: "These are very useful."
+  },
+  {
+    id: 98,
+    question: "Which pair contains two singular demonstrative pronouns?",
+    options: ["These, Those", "This, That", "This, These", "That, Those"],
     answer: 1,
-    explanation: "পিরামিড অব গিজা মিসরে অবস্থিত। এগুলো প্রাচীন মিসরীয় সভ্যতার গুরুত্বপূর্ণ স্থাপত্য নিদর্শন।",
-    example: "গিজার গ্রেট পিরামিড ফারাও খুফুর সমাধি হিসেবে নির্মিত হয়েছিল বলে পরিচিত।"
+    explanation: "'This' and 'That' are both singular demonstrative pronouns. 'This' indicates nearness, while 'That' indicates distance.",
+    example: "This is mine, and that is yours."
+  },
+  {
+    id: 99,
+    question: "Which pair contains two plural demonstrative pronouns?",
+    options: ["This, That", "This, Those", "That, These", "These, Those"],
+    answer: 3,
+    explanation: "'These' and 'Those' are plural demonstrative pronouns. 'These' indicates nearness, while 'Those' indicates distance.",
+    example: "These are new, but those are old."
+  },
+  {
+    id: 100,
+    question: "Which sentence is grammatically correct?",
+    options: ["This are my books.", "Those is my books.", "These are my books.", "These is my book."],
+    answer: 2,
+    explanation: "'These' is plural, so it must take the plural verb 'are'. The noun 'books' is also plural.",
+    example: "These are my favourite books."
   }
 ];
+
+
 
 
 // ============================================================
@@ -215,10 +220,9 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 let selectedMode = "";
-let timer;
+let timer = null;
 let timeLeft = 15;
 let answered = false;
-
 
 // ============================================================
 // DOM ELEMENTS
@@ -230,25 +234,18 @@ const resultScreen = document.getElementById("result-screen");
 
 const questionNumber = document.getElementById("question-number");
 const totalQuestions = document.getElementById("total-questions");
-
 const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
-
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
-
 const feedbackElement = document.getElementById("feedback");
 const correctMessage = document.getElementById("correct-message");
 const wrongMessage = document.getElementById("wrong-message");
 const exampleText = document.getElementById("example-text");
-
 const scoreElement = document.getElementById("score");
 const percentageElement = document.getElementById("percentage");
 const resultMessage = document.getElementById("result-message");
-
 const statusElement = document.getElementById("status");
-const socialMessage = document.querySelector(".social-message");
-
 
 // ============================================================
 // INITIAL SETUP
@@ -262,45 +259,16 @@ if (quizScreen) quizScreen.style.display = "none";
 if (resultScreen) resultScreen.style.display = "none";
 if (feedbackElement) feedbackElement.style.display = "none";
 
-
-// ============================================================
-// SHOW FEEDBACK — explanation এবং example আলাদাভাবে
-// ============================================================
-
-function showFeedbackContent(q) {
-    if (!exampleText) return;
-
-    // পুরোনো কনটেন্ট মুছে ফেলুন
-    exampleText.replaceChildren();
-
-    const explanationLabel = document.createElement("strong");
-    explanationLabel.textContent = "ব্যাখ্যা: ";
-
-    const explanationText = document.createTextNode(
-        q.explanation || "কোনো ব্যাখ্যা দেওয়া হয়নি।"
-    );
-
-    const exampleLabel = document.createElement("strong");
-    exampleLabel.textContent = "উদাহরণ: ";
-
-    const exampleValue = document.createTextNode(
-        q.example || "কোনো উদাহরণ দেওয়া হয়নি।"
-    );
-
-    exampleText.appendChild(explanationLabel);
-    exampleText.appendChild(explanationText);
-    exampleText.appendChild(document.createElement("br"));
-    exampleText.appendChild(document.createElement("br"));
-    exampleText.appendChild(exampleLabel);
-    exampleText.appendChild(exampleValue);
-}
-
-
 // ============================================================
 // START QUIZ
 // ============================================================
 
 function startQuiz(mode) {
+    if (mode !== "learning" && mode !== "exam") {
+        console.error("Invalid quiz mode:", mode);
+        return;
+    }
+
     selectedMode = mode;
     currentQuestion = 0;
     score = 0;
@@ -316,7 +284,6 @@ function startQuiz(mode) {
     playSound("start");
     showQuestion();
 }
-
 
 // ============================================================
 // SHOW QUESTION
@@ -351,10 +318,13 @@ function showQuestion() {
     }
 
     if (optionsElement) {
-        optionsElement.innerHTML = "";
+        optionsElement.replaceChildren();
     }
 
-    if (feedbackElement) feedbackElement.style.display = "none";
+    if (feedbackElement) {
+        feedbackElement.style.display = "none";
+    }
+
     if (correctMessage) correctMessage.textContent = "";
     if (wrongMessage) wrongMessage.textContent = "";
 
@@ -362,13 +332,12 @@ function showQuestion() {
         exampleText.replaceChildren();
     }
 
-    const oldButton = document.getElementById("next-question-btn");
-    if (oldButton) oldButton.remove();
+    const oldNextButton = document.getElementById("next-question-btn");
+    if (oldNextButton) oldNextButton.remove();
 
     q.options.forEach((option, index) => {
         const button = document.createElement("button");
-
-        button.className = "answer-option";
+        button.className = "option-btn";
         button.type = "button";
 
         const letter = document.createElement("span");
@@ -382,7 +351,7 @@ function showQuestion() {
         button.appendChild(letter);
         button.appendChild(optionText);
 
-        button.addEventListener("click", function () {
+        button.addEventListener("click", () => {
             selectAnswer(index, button);
         });
 
@@ -410,9 +379,39 @@ function showQuestion() {
     }
 }
 
+// ============================================================
+// SHOW EXPLANATION AND EXAMPLE
+// ============================================================
+
+function showFeedbackContent(q) {
+    if (!exampleText) return;
+
+    exampleText.replaceChildren();
+
+    const explanationHeading = document.createElement("strong");
+    explanationHeading.textContent = "Explanation: ";
+
+    const explanationParagraph = document.createElement("p");
+    explanationParagraph.appendChild(explanationHeading);
+    explanationParagraph.appendChild(
+        document.createTextNode(q.explanation || "Explanation not available.")
+    );
+
+    const exampleHeading = document.createElement("strong");
+    exampleHeading.textContent = "Example: ";
+
+    const exampleParagraph = document.createElement("p");
+    exampleParagraph.appendChild(exampleHeading);
+    exampleParagraph.appendChild(
+        document.createTextNode(q.example || "Example not available.")
+    );
+
+    exampleText.appendChild(explanationParagraph);
+    exampleText.appendChild(exampleParagraph);
+}
 
 // ============================================================
-// TIMER DISPLAY
+// UPDATE TIMER
 // ============================================================
 
 function updateTimer() {
@@ -427,7 +426,6 @@ function updateTimer() {
     }
 }
 
-
 // ============================================================
 // SELECT ANSWER
 // ============================================================
@@ -441,7 +439,7 @@ function selectAnswer(selectedIndex, clickedButton) {
     const q = quizData[currentQuestion];
 
     const buttons = optionsElement
-        ? optionsElement.querySelectorAll(".answer-option")
+        ? optionsElement.querySelectorAll(".option-btn")
         : [];
 
     buttons.forEach(button => {
@@ -458,11 +456,19 @@ function selectAnswer(selectedIndex, clickedButton) {
         playSound("correct");
 
         if (correctMessage) {
-            correctMessage.textContent = "✓ সঠিক উত্তর!";
+            correctMessage.textContent = "✓ Correct Answer!";
         }
 
         if (wrongMessage) {
             wrongMessage.textContent = "";
+        }
+
+        if (selectedMode === "learning") {
+            if (feedbackElement) {
+                feedbackElement.style.display = "block";
+            }
+
+            showFeedbackContent(q);
         }
     } else {
         if (clickedButton) {
@@ -476,21 +482,14 @@ function selectAnswer(selectedIndex, clickedButton) {
         playSound("wrong");
 
         if (wrongMessage) {
-            wrongMessage.textContent = "✗ ভুল উত্তর!";
+            wrongMessage.textContent = "✗ Wrong Answer!";
         }
 
         if (correctMessage) {
             correctMessage.textContent =
-                "সঠিক উত্তর: " + q.options[q.answer];
+                "Correct Answer: " + q.options[q.answer];
         }
-    }
 
-    // Learning Mode-এ সঠিক উত্তরেও ব্যাখ্যা দেখাবে।
-    // Exam Mode-এ উত্তর দেওয়ার পর ব্যাখ্যা দেখাবে।
-    if (
-        selectedMode === "learning" ||
-        selectedMode === "exam"
-    ) {
         if (feedbackElement) {
             feedbackElement.style.display = "block";
         }
@@ -500,7 +499,6 @@ function selectAnswer(selectedIndex, clickedButton) {
 
     showNextButton();
 }
-
 
 // ============================================================
 // TIME UP
@@ -515,7 +513,7 @@ function timeUp() {
     const q = quizData[currentQuestion];
 
     const buttons = optionsElement
-        ? optionsElement.querySelectorAll(".answer-option")
+        ? optionsElement.querySelectorAll(".option-btn")
         : [];
 
     buttons.forEach(button => {
@@ -529,12 +527,12 @@ function timeUp() {
     playSound("tryAgain");
 
     if (wrongMessage) {
-        wrongMessage.textContent = "⏰ সময় শেষ!";
+        wrongMessage.textContent = "⏰ Time's Up!";
     }
 
     if (correctMessage) {
         correctMessage.textContent =
-            "সঠিক উত্তর: " + q.options[q.answer];
+            "Correct Answer: " + q.options[q.answer];
     }
 
     if (feedbackElement) {
@@ -545,35 +543,37 @@ function timeUp() {
     showNextButton();
 }
 
-
 // ============================================================
-// NEXT QUESTION BUTTON
+// NEXT BUTTON
 // ============================================================
 
 function showNextButton() {
     const oldButton = document.getElementById("next-question-btn");
-
     if (oldButton) oldButton.remove();
 
     const nextButton = document.createElement("button");
-
     nextButton.id = "next-question-btn";
-    nextButton.className = "next-question-btn";
+    nextButton.className = "next-btn";
     nextButton.type = "button";
 
     if (currentQuestion < quizData.length - 1) {
-        nextButton.textContent = "পরবর্তী প্রশ্ন →";
+        nextButton.textContent = "Next Question →";
         nextButton.addEventListener("click", nextQuestion);
     } else {
-        nextButton.textContent = "ফলাফল দেখো 🎉";
+        nextButton.textContent = "Show Result 🎉";
         nextButton.addEventListener("click", showResult);
     }
 
-    if (quizScreen) {
+    const quizContainer = quizScreen
+        ? quizScreen.querySelector(".quiz-container")
+        : null;
+
+    if (quizContainer) {
+        quizContainer.appendChild(nextButton);
+    } else if (quizScreen) {
         quizScreen.appendChild(nextButton);
     }
 }
-
 
 // ============================================================
 // NEXT QUESTION
@@ -589,7 +589,6 @@ function nextQuestion() {
         showResult();
     }
 }
-
 
 // ============================================================
 // SHOW RESULT
@@ -617,51 +616,72 @@ function showResult() {
     if (resultMessage) {
         if (percentage >= 90) {
             resultMessage.textContent =
-                "🏆 অসাধারণ! তোমার প্রস্তুতি খুবই ভালো।";
+                "🏆 Excellent! Outstanding performance!";
             playSound("victory");
         } else if (percentage >= 75) {
             resultMessage.textContent =
-                "🌟 খুব ভালো! আরও একটু অনুশীলন করলে আরও ভালো করবে।";
+                "🌟 Very Good! Keep improving your Grammar.";
             playSound("success");
         } else if (percentage >= 50) {
             resultMessage.textContent =
-                "👍 ভালো চেষ্টা! নিয়মিত অনুশীলন চালিয়ে যাও।";
+                "👍 Good Try! Keep practicing regularly.";
             playSound("complete");
         } else {
             resultMessage.textContent =
-                "📚 আরও অনুশীলন করতে হবে। পরবর্তী কুইজে আরও ভালো করবে।";
+                "📚 Keep Learning! Try Again and improve your score.";
             playSound("tryAgain");
         }
     }
 
-    if (socialMessage) {
-        socialMessage.style.display = "block";
-    }
-}
+    let socialBox = document.getElementById("social-message");
 
+    if (!socialBox && resultScreen) {
+        const resultCard = resultScreen.querySelector(".result-card");
+
+        if (resultCard) {
+            socialBox = document.createElement("div");
+            socialBox.id = "social-message";
+            socialBox.className = "social-message";
+            resultCard.appendChild(socialBox);
+        }
+    }
+
+    if (socialBox) {
+        socialBox.textContent =
+            "❤️ Did you enjoy the quiz? Like our Facebook post, " +
+            "comment your score, share the quiz with your friends, " +
+            "and follow our page for more English Grammar quizzes.";
+
+        socialBox.style.display = "block";
+    }
+
+    setupFacebookButton();
+}
 
 // ============================================================
 // RETURN TO FACEBOOK
 // ============================================================
 
 function returnToFacebook() {
-    if (
-        FACEBOOK_POST_URL &&
-        FACEBOOK_POST_URL !== "PASTE_YOUR_FACEBOOK_POST_URL_HERE"
-    ) {
-        window.location.href = FACEBOOK_POST_URL;
-    } else {
-        alert(
-            "Facebook post link এখনো যোগ করা হয়নি।\n\n" +
-            "script.js-এর FACEBOOK_POST_URL-এ " +
-            "আপনার Facebook post link বসান।"
-        );
+    if (!FACEBOOK_POST_URL) {
+        alert("Facebook post link is not available.");
+        return;
     }
+
+    window.location.assign(FACEBOOK_POST_URL);
 }
 
+function setupFacebookButton() {
+    const facebookButton = document.getElementById("facebook-btn");
+    if (!facebookButton) return;
+
+    facebookButton.onclick = function () {
+        returnToFacebook();
+    };
+}
 
 // ============================================================
-// PLAY AGAIN
+// RELOAD QUIZ
 // ============================================================
 
 function reloadQuiz() {
@@ -677,69 +697,101 @@ function reloadQuiz() {
     if (startScreen) startScreen.style.display = "block";
 
     if (statusElement) statusElement.textContent = "";
-    if (socialMessage) socialMessage.style.display = "none";
-
-    const nextButton = document.getElementById("next-question-btn");
-    if (nextButton) nextButton.remove();
-
-    if (progressBar) progressBar.style.width = "0%";
 
     if (timerElement) {
         timerElement.textContent = "15";
         timerElement.classList.remove("timer-danger");
     }
 
-    if (feedbackElement) feedbackElement.style.display = "none";
+    if (progressBar) {
+        progressBar.style.width = "0%";
+    }
+
+    if (questionNumber) {
+        questionNumber.textContent = "1";
+    }
+
+    if (totalQuestions) {
+        totalQuestions.textContent = quizData.length;
+    }
+
+    if (optionsElement) {
+        optionsElement.replaceChildren();
+    }
+
+    if (feedbackElement) {
+        feedbackElement.style.display = "none";
+    }
+
     if (correctMessage) correctMessage.textContent = "";
     if (wrongMessage) wrongMessage.textContent = "";
-    if (exampleText) exampleText.replaceChildren();
+
+    if (exampleText) {
+        exampleText.replaceChildren();
+    }
+
+    const nextButton = document.getElementById("next-question-btn");
+    if (nextButton) nextButton.remove();
+
+    const socialBox = document.getElementById("social-message");
+    if (socialBox) socialBox.style.display = "none";
 
     playSound("start");
 }
 
+// ============================================================
+// INITIALIZE FACEBOOK BUTTON
+// ============================================================
+
+setupFacebookButton();
 
 // ============================================================
-// ANSWER DISTRIBUTION AND DATA VALIDATION
+// QUIZ DATA VALIDATION + ANSWER DISTRIBUTION
 // ============================================================
 
-(function checkAnswerDistribution() {
+(function checkQuizData() {
     const distribution = [0, 0, 0, 0];
-    const questionIds = new Set();
-    let hasErrors = false;
+    const seenIds = new Set();
+    const errors = [];
 
-    quizData.forEach(q => {
-        if (questionIds.has(q.id)) {
-            console.error("Duplicate question ID:", q.id);
-            hasErrors = true;
+    quizData.forEach((q, index) => {
+        const label = `Question ${index + 1} (ID: ${q.id})`;
+
+        if (seenIds.has(q.id)) {
+            errors.push(`${label}: Duplicate question ID.`);
         }
-        questionIds.add(q.id);
+        seenIds.add(q.id);
+
+        if (typeof q.question !== "string" || !q.question.trim()) {
+            errors.push(`${label}: Missing question text.`);
+        }
 
         if (!Array.isArray(q.options) || q.options.length !== 4) {
-            console.error(
-                "Question must have exactly four options:",
-                q.id
-            );
-            hasErrors = true;
-            return;
+            errors.push(`${label}: Exactly four options are required.`);
+        } else if (q.options.some(option =>
+            typeof option !== "string" || !option.trim()
+        )) {
+            errors.push(`${label}: One or more options are empty.`);
         }
 
         if (
             !Number.isInteger(q.answer) ||
             q.answer < 0 ||
-            q.answer >= q.options.length
+            q.answer > 3 ||
+            !Array.isArray(q.options) ||
+            !q.options[q.answer]
         ) {
-            console.error("Invalid answer index:", q.id);
-            hasErrors = true;
+            errors.push(`${label}: Invalid answer index.`);
         } else {
             distribution[q.answer]++;
         }
 
-        if (!q.explanation || !q.example) {
-            console.error(
-                "Missing explanation or example:",
-                q.id
-            );
-            hasErrors = true;
+        if (typeof q.explanation !== "string" || !q.explanation.trim()) {
+            errors.push(`${label}: Missing explanation.`);
+        }
+
+        if (typeof q.example !== "string" || !q.example.trim()) {
+            errors.push(`${label}: Missing example.`);
         }
     });
 
@@ -751,15 +803,13 @@ function reloadQuiz() {
         `D=${distribution[3]}`
     );
 
-    console.log("Total Questions:", quizData.length);
-
-    if (distribution.some(count => count < 3)) {
-        console.warn(
-            "Warning: One or more answer positions have fewer than 3 correct answers."
-        );
+    if (quizData.length !== 20) {
+        errors.push(`Expected 20 questions, found ${quizData.length}.`);
     }
 
-    if (!hasErrors) {
-        console.log("Quiz data validation completed without detected errors.");
+    if (errors.length > 0) {
+        console.error("Quiz data validation errors:", errors);
+    } else {
+        console.log("Quiz data validation passed.");
     }
 })();
