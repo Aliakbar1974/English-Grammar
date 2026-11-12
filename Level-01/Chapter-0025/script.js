@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo/?fbid=122125299657435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo?fbid=122125752945435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -42,18 +42,13 @@ function playSound(soundName) {
 // answer: 0 = A, 1 = B, 2 = C, 3 = D
 // ============================================================
 
-
-
-
 const quizData = [
- 
-
   {
     id: 81,
-    question: "Which is a demonstrative pronoun?",
+    question: "Which word can function as a demonstrative pronoun?",
     options: ["Who", "This", "He", "Someone"],
     answer: 1,
-    explanation: "'This' is a demonstrative pronoun because it points to a specific person or thing.",
+    explanation: "'This' can function as a demonstrative pronoun when it stands alone and points to a specific person or thing.",
     example: "This is my favourite book."
   },
   {
@@ -69,7 +64,7 @@ const quizData = [
     question: "Which demonstrative pronoun is generally used for a singular thing farther away?",
     options: ["These", "Those", "That", "This"],
     answer: 2,
-    explanation: "'That' is used to point to one person or thing that is farther away.",
+    explanation: "'That' is used to point to one person or thing that is farther away from the speaker.",
     example: "That is my school."
   },
   {
@@ -170,18 +165,18 @@ const quizData = [
   },
   {
     id: 96,
-    question: "Which demonstrative pronoun is singular?",
-    options: ["Those", "These", "Both A and B", "This"],
-    answer: 3,
-    explanation: "'This' is singular and refers to one person or thing near the speaker. 'That' is also singular, but it is not among the other choices here.",
+    question: "Which of the following is a singular demonstrative pronoun?",
+    options: ["These", "Those", "This", "Them"],
+    answer: 2,
+    explanation: "'This' and 'That' are singular demonstrative pronouns. 'This' is used for something near the speaker, while 'That' is used for something farther away. Among the given options, only 'This' is singular.",
     example: "This is my classroom."
   },
   {
     id: 97,
-    question: "Which demonstrative pronoun is plural?",
-    options: ["It", "That", "These", "This"],
+    question: "Which of the following is a plural demonstrative pronoun?",
+    options: ["This", "That", "These", "It"],
     answer: 2,
-    explanation: "'These' is a plural demonstrative pronoun used for things near the speaker. 'Those' is also plural.",
+    explanation: "'These' and 'Those' are plural demonstrative pronouns. 'These' refers to things near the speaker, while 'Those' refers to things farther away.",
     example: "These are very useful."
   },
   {
@@ -209,8 +204,6 @@ const quizData = [
     example: "These are my favourite books."
   }
 ];
-
-
 
 
 // ============================================================
