@@ -3,14 +3,14 @@
 
 // ============================================================
 // ENGLISH GRAMMAR QUIZ 26
-// Topic: demonstrative pronoun
+// Topic: Interrogative Pronouns
 // 20 Questions | Learning Mode + Exam Mode
 // 15 Seconds per Question
 // ============================================================
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo?fbid=122125752945435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122125910703435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -43,13 +43,14 @@ function playSound(soundName) {
 // ============================================================
 
 
+
 const quizData = [
   {
     id: 101,
     question: "Which is an interrogative pronoun?",
     options: ["He", "This", "Who", "Someone"],
     answer: 2,
-    explanation: "'Who' is an interrogative pronoun used to ask about a person.",
+    explanation: "'Who' is an interrogative pronoun used to ask questions about a person.",
     example: "Who is your teacher?"
   },
   {
@@ -57,20 +58,20 @@ const quizData = [
     question: "Which interrogative pronoun is generally used to ask about a person?",
     options: ["Who", "Which", "What", "Whose"],
     answer: 0,
-    explanation: "'Who' is generally used to ask about a person, especially as the subject of a question.",
+    explanation: "'Who' is generally used to ask about a person, especially when the person is the subject of the question.",
     example: "Who is coming today?"
   },
   {
     id: 103,
-    question: "Which interrogative pronoun asks about possession?",
+    question: "Which interrogative pronoun is used to ask about possession?",
     options: ["Who", "Whom", "What", "Whose"],
     answer: 3,
-    explanation: "'Whose' asks who owns or possesses something.",
+    explanation: "'Whose' is used to ask who owns or possesses something. It can stand alone as an interrogative pronoun.",
     example: "Whose is this?"
   },
   {
     id: 104,
-    question: "Which interrogative pronoun is used to ask about a thing or information?",
+    question: "Which interrogative pronoun is used to ask about a thing, information, or an action?",
     options: ["Who", "What", "Whose", "Whom"],
     answer: 1,
     explanation: "'What' is used to ask about things, information, or actions.",
@@ -81,15 +82,15 @@ const quizData = [
     question: "Which interrogative pronoun is commonly used to choose from a limited set?",
     options: ["Who", "Whom", "Which", "Whose"],
     answer: 2,
-    explanation: "'Which' is commonly used when choosing from a limited number of people or things.",
+    explanation: "'Which' is commonly used when choosing or identifying one person or thing from a specific or limited group.",
     example: "Which do you prefer?"
   },
   {
     id: 106,
-    question: "Which is the objective interrogative pronoun?",
+    question: "Which is traditionally known as the objective form of the interrogative pronoun 'who'?",
     options: ["Who", "Whom", "Whose", "Which"],
     answer: 1,
-    explanation: "'Whom' is the objective form traditionally used when asking about the object of a verb or preposition.",
+    explanation: "'Whom' is the traditional objective form of 'who'. It is used as the object of a verb or preposition, especially in formal English.",
     example: "Whom did you invite?"
   },
   {
@@ -97,15 +98,15 @@ const quizData = [
     question: "\"_____ is at the door?\"",
     options: ["Who", "Whom", "Whose", "Which"],
     answer: 0,
-    explanation: "'Who' is used because the pronoun is the subject of the verb 'is'.",
+    explanation: "'Who' is correct because the pronoun is the subject of the verb 'is'.",
     example: "Who is at the door?"
   },
   {
     id: 108,
-    question: "\"_____ did you meet yesterday?\"",
+    question: "\"_____ did you meet yesterday?\" (Use traditional formal grammar.)",
     options: ["Who", "Whose", "What", "Whom"],
     answer: 3,
-    explanation: "'Whom' is traditionally used as the object of the verb 'meet'.",
+    explanation: "'Whom' is traditionally used because the pronoun is the object of the verb 'meet'. In everyday English, 'Who' is also widely used.",
     example: "Whom did you meet yesterday?"
   },
   {
@@ -113,7 +114,7 @@ const quizData = [
     question: "\"_____ is this?\" (Ask about the owner.)",
     options: ["Who", "Whom", "Whose", "What"],
     answer: 2,
-    explanation: "'Whose' asks about ownership. It can stand alone as an interrogative pronoun.",
+    explanation: "'Whose' asks about ownership and can be used independently as an interrogative pronoun.",
     example: "Whose is this?"
   },
   {
@@ -129,20 +130,20 @@ const quizData = [
     question: "\"_____ do you prefer, tea or coffee?\"",
     options: ["Which", "Who", "Whom", "Whose"],
     answer: 0,
-    explanation: "'Which' is used to ask someone to choose between a limited set of options.",
+    explanation: "'Which' is used to ask someone to choose between two or more specific options.",
     example: "Which do you prefer, tea or coffee?"
   },
   {
     id: 112,
-    question: "Which sentence is correct in formal English?",
+    question: "Which sentence uses the traditional objective form correctly in formal English?",
     options: [
-      "Who did you invite? only",
+      "Who did you invite?",
       "Whose did you invite?",
       "Which did you invite?",
       "Whom did you invite?"
     ],
     answer: 3,
-    explanation: "'Whom did you invite?' is traditionally preferred in formal English because 'whom' is the object of the verb 'invite'.",
+    explanation: "'Whom did you invite?' follows traditional formal grammar because 'whom' is the object of the verb 'invite'. However, 'Who did you invite?' is also correct in modern everyday English.",
     example: "Whom did the manager select?"
   },
   {
@@ -150,7 +151,7 @@ const quizData = [
     question: "Which question asks about ownership?",
     options: ["Who came?", "Whose bag is this?", "What happened?", "Which came first?"],
     answer: 1,
-    explanation: "'Whose bag is this?' asks who owns the bag.",
+    explanation: "'Whose bag is this?' asks who owns the bag. Here, 'whose' is used before the noun 'bag'.",
     example: "Whose bag is this?"
   },
   {
@@ -163,10 +164,10 @@ const quizData = [
   },
   {
     id: 115,
-    question: "Which question asks about the object of the verb?",
+    question: "Which question uses the traditional objective form to ask about the object of a verb?",
     options: ["Who came?", "Whose book is this?", "What is this?", "Whom did you see?"],
     answer: 3,
-    explanation: "'Whom' is traditionally used to ask about the object of the verb 'see'.",
+    explanation: "'Whom' is traditionally used because it is the object of the verb 'see'. In modern everyday English, 'Who did you see?' is also common.",
     example: "Whom did you see at the station?"
   },
   {
@@ -174,7 +175,7 @@ const quizData = [
     question: "\"_____ is your favourite subject?\"",
     options: ["Who", "Whom", "Whose", "What"],
     answer: 3,
-    explanation: "'What' asks about the subject or thing someone likes most.",
+    explanation: "'What' is used to ask about a subject or thing someone likes most.",
     example: "What is your favourite subject?"
   },
   {
@@ -182,7 +183,7 @@ const quizData = [
     question: "\"_____ of the two boys is taller?\"",
     options: ["Who", "Which", "Whom", "Whose"],
     answer: 1,
-    explanation: "'Which' is used to identify one person from a specific, limited group of two.",
+    explanation: "'Which' is used to identify one person from a specific group of two.",
     example: "Which of the two boys is taller?"
   },
   {
@@ -190,7 +191,7 @@ const quizData = [
     question: "\"_____ car is parked outside?\"",
     options: ["Who", "Whom", "Whose", "What"],
     answer: 2,
-    explanation: "'Whose' asks about the owner of the car.",
+    explanation: "'Whose' is used before the noun 'car' to ask about its owner.",
     example: "Whose car is parked outside?"
   },
   {
@@ -203,7 +204,7 @@ const quizData = [
   },
   {
     id: 120,
-    question: "Which set contains interrogative pronouns?",
+    question: "Which set contains the main interrogative pronouns?",
     options: [
       "He, she, they, it",
       "This, that, these, those",
@@ -211,10 +212,11 @@ const quizData = [
       "Who, whom, whose, which, what"
     ],
     answer: 3,
-    explanation: "Who, whom, whose, which, and what are traditionally taught as the main interrogative pronouns.",
+    explanation: "Who, whom, whose, which, and what are traditionally taught as the main interrogative pronouns. They are used to ask questions about people, things, choices, and ownership.",
     example: "Who, whom, whose, which, and what are used to ask questions."
   }
 ];
+
 
 
 
