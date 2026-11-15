@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo/?fbid=122125910703435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo?fbid=122126210361435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -41,8 +41,6 @@ function playSound(soundName) {
 // QUIZ DATA
 // answer: 0 = A, 1 = B, 2 = C, 3 = D
 // ============================================================
-
-
 
 
 const quizData = [
@@ -89,8 +87,8 @@ const quizData = [
   {
     id: 126,
     question: "\"The man _____ came here is my uncle.\"",
-    options: ["Which", "What", "Whose", "Who"],
-    answer: 3,
+    options: ["Who", "Which", "What", "Whose"],
+    answer: 0,
     explanation: "'Who' is used because it refers to a person and acts as the subject of the verb 'came'.",
     example: "The man who came here is my uncle."
   },
@@ -107,7 +105,7 @@ const quizData = [
     question: "\"The girl _____ father is a doctor is my friend.\"",
     options: ["Who", "Whom", "Which", "Whose"],
     answer: 3,
-    explanation: "'Whose' expresses possession and shows that the father belongs to or is related to the girl.",
+    explanation: "'Whose' expresses possession and shows that the father is related to the girl.",
     example: "The girl whose father is a doctor is my friend."
   },
   {
@@ -227,6 +225,7 @@ const quizData = [
     example: "The man that came is my uncle."
   }
 ];
+
 
 
 
