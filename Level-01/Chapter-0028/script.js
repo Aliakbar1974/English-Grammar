@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo?fbid=122126210361435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122126366547435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -188,7 +188,7 @@ const quizData = [
     ],
     answer: 2,
     explanation: "'Everyone' is singular and must take the singular verb 'is'. Therefore, the third sentence is grammatically correct.",
-    example: "Everyone is ready for the final examination."
+    example: "Everyone have completed the task."
   },
   {
     id: 158,
