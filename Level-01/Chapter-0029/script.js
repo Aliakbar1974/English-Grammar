@@ -44,6 +44,7 @@ function playSound(soundName) {
 
 
 
+
 const quizData = [
   {
     id: 161,
@@ -66,15 +67,15 @@ const quizData = [
     question: "Which is a distributive pronoun?",
     options: ["They", "This", "Neither", "Who"],
     answer: 2,
-    explanation: "'Neither' is a distributive pronoun that means not one and not the other of two persons or things.",
+    explanation: "'Neither' is a distributive pronoun meaning not one and not the other of two persons or things.",
     example: "Neither of the two answers is correct."
   },
   {
     id: 164,
-    question: "\"Each of the boys brought _____ book.\"",
+    question: "\"Each of the boys brought _____ book.\" (Use traditional formal grammar.)",
     options: ["their", "them", "theirs", "his"],
     answer: 3,
-    explanation: "In traditional formal grammar, 'each' is singular, so the singular pronoun 'his' is used in this sentence. Singular 'their' is also widely accepted in modern English.",
+    explanation: "In traditional formal grammar, 'each' is singular, so 'his' is used here. However, singular 'their' is also widely accepted in modern English as a gender-neutral pronoun.",
     example: "Each of the boys brought his book to school."
   },
   {
@@ -87,10 +88,10 @@ const quizData = [
   },
   {
     id: 166,
-    question: "\"Neither of the answers _____ correct.\"",
+    question: "\"Neither of the answers _____ correct.\" (Use formal grammar.)",
     options: ["are", "were", "is", "have"],
     answer: 2,
-    explanation: "'Neither' is traditionally treated as singular in formal grammar, so the singular verb 'is' is appropriate here.",
+    explanation: "'Neither' is traditionally treated as singular in formal grammar, so the singular verb 'is' is appropriate.",
     example: "Neither of the answers is correct."
   },
   {
@@ -103,7 +104,7 @@ const quizData = [
   },
   {
     id: 168,
-    question: "Which pronoun refers to two persons or things considered separately?",
+    question: "Which pronoun refers to members of a group individually?",
     options: ["Many", "Both", "Several", "Each"],
     answer: 3,
     explanation: "'Each' refers to the members of a group individually. It can be used for two or more persons or things.",
@@ -122,7 +123,7 @@ const quizData = [
     question: "Which is a reciprocal pronoun?",
     options: ["Myself", "One another", "Whose", "This"],
     answer: 1,
-    explanation: "'One another' is a reciprocal pronoun that expresses a mutual relationship or action among people or things.",
+    explanation: "'One another' is a reciprocal pronoun that expresses a mutual relationship or action among two or more people or things.",
     example: "The team members always encourage one another."
   },
   {
@@ -138,12 +139,12 @@ const quizData = [
     question: "\"The team members supported _____.\"",
     options: ["one another", "himself", "itself", "herself"],
     answer: 0,
-    explanation: "'One another' expresses mutual support among the members of a team.",
+    explanation: "'One another' is used to express mutual support among the members of a team.",
     example: "The team members supported one another during the competition."
   },
   {
     id: 173,
-    question: "Which pronoun expresses a mutual relationship?",
+    question: "Which pronoun expresses a mutual action or relationship?",
     options: ["Demonstrative pronoun", "Interrogative pronoun", "Possessive pronoun", "Reciprocal pronoun"],
     answer: 3,
     explanation: "A reciprocal pronoun expresses a mutual action or relationship between two or more people or things. 'Each other' and 'one another' are reciprocal pronouns.",
@@ -151,7 +152,7 @@ const quizData = [
   },
   {
     id: 174,
-    question: "Which pronoun refers to members individually?",
+    question: "Which pronoun refers to every member of a group separately?",
     options: ["They", "Both", "Each", "Many"],
     answer: 2,
     explanation: "'Each' refers to every member of a group individually rather than considering the group as a whole.",
@@ -167,10 +168,10 @@ const quizData = [
   },
   {
     id: 176,
-    question: "\"Neither of the boys _____ ready.\"",
+    question: "\"Neither of the boys _____ ready.\" (Use formal grammar.)",
     options: ["are", "were", "have", "is"],
     answer: 3,
-    explanation: "'Neither' is normally treated as singular in formal grammar, so it takes the singular verb 'is'.",
+    explanation: "'Neither' is traditionally treated as singular in formal grammar, so it takes the singular verb 'is'.",
     example: "Neither of the boys is ready for the competition."
   },
   {
@@ -183,7 +184,7 @@ const quizData = [
   },
   {
     id: 178,
-    question: "Which sentence is correct?",
+    question: "Which sentence is grammatically correct?",
     options: [
       "Each of the students have a book.",
       "Each of the students are having a book.",
@@ -191,12 +192,12 @@ const quizData = [
       "Each of the students has a book."
     ],
     answer: 3,
-    explanation: "'Each' is singular and takes the singular verb 'has'. The correct structure is 'Each of the students has a book.'",
+    explanation: "'Each' is singular and takes the singular verb 'has'. The correct grammatical structure is 'Each of the students has a book.'",
     example: "Each of the students has a book for the English class."
   },
   {
     id: 179,
-    question: "Which sentence is correct?",
+    question: "Which sentence is grammatically correct?",
     options: [
       "The two brothers helped himself.",
       "The two brothers helped themselves each.",
@@ -209,7 +210,7 @@ const quizData = [
   },
   {
     id: 180,
-    question: "Which sentence is correct?",
+    question: "Which sentence is grammatically correct?",
     options: [
       "The players congratulated himself.",
       "The players congratulated one another.",
@@ -221,6 +222,7 @@ const quizData = [
     example: "The players congratulated one another after winning the tournament."
   }
 ];
+
 
 
 
