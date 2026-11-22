@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo/?fbid=122126844117435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122127320559435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -84,11 +84,11 @@ const quizData = [
   },
   {
     id: "ADJ005",
-    question: "Which word describes a noun in “The red car is fast”?",
-    options: ["red", "car", "is", "fast"],
-    answer: 0,
-    explanation: "Red একটি adjective, যা car-এর রং প্রকাশ করছে।",
-    example: "The red car is fast. এখানে red শব্দটি car-কে বর্ণনা করছে।"
+    question: "Which word describes the colour of the car in “The red car is fast”?",
+options: ["red", "car", "is", "fast"],
+answer: 0,
+explanation: "Red একটি adjective, যা car-এর রং প্রকাশ করছে।",
+example: "The red car is fast. এখানে red শব্দটি car-এর রং বোঝাচ্ছে।"
   },
   {
     id: "ADJ006",
@@ -214,16 +214,16 @@ const quizData = [
   },
   {
     id: "ADJ020",
-    question: "Which pair of words consists of two adjectives in “My new shoes are comfortable”?",
-    options: [
-      "My, shoes",
-      "Shoes, comfortable",
-      "My, new",
-      "New, comfortable"
-    ],
-    answer: 3,
-    explanation: "New এবং comfortable—দুটি adjective। New শব্দটি shoes-কে বর্ণনা করছে এবং comfortable শব্দটি shoes-এর অবস্থা প্রকাশ করছে।",
-    example: "My new shoes are comfortable. এখানে new ও comfortable দুটি adjective।"
+    question: "Which pair contains two descriptive adjectives in “My new shoes are comfortable”?",
+options: [
+  "My, shoes",
+  "Shoes, comfortable",
+  "Are, shoes",
+  "New, comfortable"
+],
+answer: 3,
+explanation: "New এবং comfortable—দুটি descriptive adjective। New শব্দটি shoes-এর নতুনত্ব এবং comfortable শব্দটি shoes-এর আরামদায়ক অবস্থা প্রকাশ করছে।",
+example: "My new shoes are comfortable. এখানে new ও comfortable দুটি descriptive adjective।"
   }
 ];
 
