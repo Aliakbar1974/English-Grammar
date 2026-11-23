@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo/?fbid=122127320559435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122127472773435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -77,13 +77,13 @@ const quizData = [
     example: "She is a brave girl. এখানে brave শব্দটি girl-এর গুণ বোঝাচ্ছে।"
   },
   {
-    id: "ADJ025",
-    question: "Which word is an adjective of material?",
-    options: ["Five", "Wooden", "Much", "This"],
-    answer: 1,
-    explanation: "Wooden একটি adjective of material, যা কোনো বস্তু কী উপাদান দিয়ে তৈরি তা প্রকাশ করে।",
-    example: "I have a wooden table. এখানে wooden শব্দটি table কী উপাদানে তৈরি তা বোঝাচ্ছে।"
-  },
+  id: "ADJ025",
+  question: "Which word is an adjective of quality?",
+  options: ["Beautiful", "Five", "Much", "This"],
+  answer: 0,
+  explanation: "Beautiful একটি adjective of quality, যা কোনো ব্যক্তি বা বস্তুর সৌন্দর্য বা গুণ প্রকাশ করে।",
+  example: "She has a beautiful dress. এখানে beautiful শব্দটি dress-এর সৌন্দর্য প্রকাশ করছে।"
+},
   {
     id: "ADJ026",
     question: "“The poor man needs help.” The word “poor” indicates—",
@@ -195,7 +195,7 @@ const quizData = [
   },
   {
     id: "ADJ039",
-    question: "Which adjective describes a person's ability?",
+    question: "Which adjective describes a person's intelligence?",
     options: ["Intelligent", "Seven", "Those", "Much"],
     answer: 0,
     explanation: "Intelligent একটি adjective of quality, যা কোনো ব্যক্তির বুদ্ধিমত্তা বা মানসিক সক্ষমতা প্রকাশ করে।",
