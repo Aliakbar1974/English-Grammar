@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo/?fbid=122127472773435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo?fbid=122127884025435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -76,7 +76,7 @@ const quizData = [
       "I have many money.",
       "I have few money.",
       "I have several money.",
-      "I have much money."
+      "I don't have much money."
     ],
     answer: 3,
     explanation: "'Money' is an uncountable noun, so 'much' is used with it.",
@@ -165,7 +165,7 @@ const quizData = [
     options: ["Many", "Much", "Few", "Several"],
     answer: 1,
     explanation: "'Information' is an uncountable noun, so 'much' is appropriate.",
-    example: "We need much information about the topic."
+    example: "How much information do you need?"
   },
   {
     id: "ADJ055",
