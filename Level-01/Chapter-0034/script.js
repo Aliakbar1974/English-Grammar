@@ -10,7 +10,7 @@
 
 // Facebook post URL
 const FACEBOOK_POST_URL =
-    "https://www.facebook.com/photo?fbid=122127884025435742&set=a.122102731923435742";
+    "https://www.facebook.com/photo/?fbid=122128022625435742&set=a.122102731923435742";
 
 // ============================================================
 // SOUND ENGINE
@@ -44,101 +44,100 @@ function playSound(soundName) {
 
 
 
-
 const quizData = [
   {
     id: "ADJ061",
     question: "Which adjective indicates number?",
-    options: ["Five", "Beautiful", "Much", "Honest"],
-    answer: 0,
+    options: ["Beautiful", "Much", "Five", "Honest"],
+    answer: 2,
     explanation: "'Five' is an adjective of number because it indicates the exact number of things.",
     example: "I have five books."
   },
   {
     id: "ADJ062",
     question: "“I have three books.” The word “three” is an adjective of—",
-    options: ["Quantity", "Number", "Quality", "Possession"],
-    answer: 1,
+    options: ["Number", "Quantity", "Quality", "Possession"],
+    answer: 0,
     explanation: "'Three' indicates the exact number of books, so it is an adjective of number.",
     example: "She has three pens."
   },
   {
     id: "ADJ063",
     question: "Which is a cardinal number?",
-    options: ["First", "Second", "Five", "Fifth"],
-    answer: 2,
+    options: ["First", "Second", "Fifth", "Five"],
+    answer: 3,
     explanation: "'Five' is a cardinal number because it expresses an exact quantity or count.",
     example: "There are five students in the room."
   },
   {
     id: "ADJ064",
     question: "Which is an ordinal adjective?",
-    options: ["One", "Two", "Three", "First"],
-    answer: 3,
+    options: ["One", "First", "Two", "Three"],
+    answer: 1,
     explanation: "'First' is an ordinal adjective because it indicates the position or order of someone or something.",
     example: "She won the first prize."
   },
   {
     id: "ADJ065",
     question: "“He secured the first position.” The word “first” indicates—",
-    options: ["Order", "Quantity", "Quality", "Possession"],
-    answer: 0,
+    options: ["Quantity", "Quality", "Possession", "Order"],
+    answer: 3,
     explanation: "'First' indicates the position or order of someone in a series. It is an ordinal adjective here.",
     example: "He secured the first position in the competition."
   },
   {
     id: "ADJ066",
     question: "Which word indicates an exact number?",
-    options: ["Many", "Five", "Several", "Few"],
-    answer: 1,
+    options: ["Many", "Several", "Five", "Few"],
+    answer: 2,
     explanation: "'Five' indicates an exact number, whereas 'many', 'several' and 'few' indicate indefinite numbers.",
     example: "There are five chairs in the room."
   },
   {
     id: "ADJ067",
     question: "Which is an adjective of number?",
-    options: ["Beautiful", "Much", "Ten", "Honest"],
-    answer: 2,
+    options: ["Ten", "Beautiful", "Much", "Honest"],
+    answer: 0,
     explanation: "'Ten' is an adjective of number because it tells us the exact number of things.",
     example: "Ten students joined the competition."
   },
   {
     id: "ADJ068",
     question: "In “The second chapter is easy,” which word is the ordinal adjective?",
-    options: ["chapter", "easy", "is", "second"],
-    answer: 3,
+    options: ["chapter", "second", "easy", "is"],
+    answer: 1,
     explanation: "'Second' is an ordinal adjective because it indicates the position of the chapter in a series.",
     example: "The third chapter is interesting."
   },
   {
     id: "ADJ069",
     question: "Which adjective indicates position in a series?",
-    options: ["First", "Some", "Much", "Beautiful"],
-    answer: 0,
+    options: ["Some", "Much", "First", "Beautiful"],
+    answer: 2,
     explanation: "'First' indicates the position of someone or something in a series.",
     example: "This is the first question."
   },
   {
     id: "ADJ070",
     question: "“She has two sisters.” The word “two” indicates—",
-    options: ["Quality", "Number", "Quantity", "Possession"],
-    answer: 1,
+    options: ["Number", "Quality", "Quantity", "Possession"],
+    answer: 0,
     explanation: "'Two' indicates the exact number of sisters.",
     example: "He has two brothers."
   },
   {
     id: "ADJ071",
     question: "Which is a cardinal adjective?",
-    options: ["Fourth", "Sixth", "Eight", "Ninth"],
-    answer: 2,
+    options: ["Fourth", "Sixth", "Ninth", "Eight"],
+    answer: 3,
     explanation: "'Eight' is a cardinal adjective because it expresses an exact number.",
     example: "Eight players participated in the match."
   },
   {
     id: "ADJ072",
     question: "Which is an ordinal adjective?",
-    options: ["Seven", "Ten", "Five", "Third"],
-    answer: 3,
+    options: ["Seven", "Third", "Ten", "Five"],
+    answer: 1,
     explanation: "'Third' is an ordinal adjective because it indicates position or order.",
     example: "He lives on the third floor."
   },
@@ -153,40 +152,40 @@ const quizData = [
   {
     id: "ADJ074",
     question: "Which adjective means “not many”?",
-    options: ["Much", "Few", "Enough", "Little"],
-    answer: 1,
+    options: ["Much", "Enough", "Little", "Few"],
+    answer: 3,
     explanation: "'Few' indicates a small number and is used with countable plural nouns.",
     example: "Few students were absent today."
   },
   {
     id: "ADJ075",
     question: "“There are several students in the room.” “Several” indicates—",
-    options: ["Quality", "Colour", "Number", "Possession"],
-    answer: 2,
+    options: ["Quality", "Number", "Colour", "Possession"],
+    answer: 1,
     explanation: "'Several' indicates an indefinite number of students.",
     example: "Several people attended the meeting."
   },
   {
     id: "ADJ076",
     question: "Which adjective indicates an indefinite number?",
-    options: ["Five", "First", "Second", "Several"],
-    answer: 3,
+    options: ["Five", "First", "Several", "Second"],
+    answer: 2,
     explanation: "'Several' indicates an indefinite number rather than an exact number.",
     example: "Several books are on the table."
   },
   {
     id: "ADJ077",
     question: "Which word is NOT an adjective of number?",
-    options: ["Beautiful", "Three", "First", "Several"],
-    answer: 0,
+    options: ["Three", "Beautiful", "First", "Several"],
+    answer: 1,
     explanation: "'Beautiful' is an adjective of quality, while 'three', 'first' and 'several' are adjectives of number.",
     example: "She is a beautiful girl."
   },
   {
     id: "ADJ078",
     question: "“Many students attended the class.” “Many” indicates—",
-    options: ["Quality", "Number", "Possession", "Colour"],
-    answer: 1,
+    options: ["Quality", "Possession", "Colour", "Number"],
+    answer: 3,
     explanation: "'Many' indicates an indefinite number of countable plural nouns.",
     example: "Many children play in the park."
   },
@@ -201,13 +200,12 @@ const quizData = [
   {
     id: "ADJ080",
     question: "Which word indicates order?",
-    options: ["Several", "Many", "Much", "Fifth"],
-    answer: 3,
+    options: ["Fifth", "Several", "Many", "Much"],
+    answer: 0,
     explanation: "'Fifth' is an ordinal number because it indicates position or order in a series.",
     example: "She finished in fifth place."
   }
 ];
-
 
 
 
